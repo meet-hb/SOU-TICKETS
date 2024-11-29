@@ -55,6 +55,16 @@
         color: #333;
         font-weight: 500;
     }
+
+    article {
+        /* background: #ccc; */
+        /* height: 200px; */
+        display: none;
+    }
+
+    article.on {
+        display: block;
+    }
 </style>
 
 <body>
@@ -103,20 +113,18 @@
             </div>
         </nav>
     </div>
-    <div class="bg-breadcrumb background-image">
+    <!-- <div class="bg-breadcrumb background-image">
         <div class="container z-index-common">
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
                     <li><a href="index.html">Home</a></li>
-
                 </ul>
             </div>
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Login Or Signup</h1>
             </div>
-
         </div>
-    </div>
+    </div> -->
     <!-- Services Start -->
     <div class="container-fluid service overflow-hidden pt-5">
         <div class="container py-5">
@@ -136,67 +144,147 @@
                             <a href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Forgot Password?</a>
                         </div>
                         <button type="submit" class="btn-log">Login</button>
-                        <!-- <p>or login with social platforms</p>
+                        <p>or login with social platforms</p>
                         <div class="social-icons">
                             <a href="#"><i class='bx bxl-google'></i></a>
                             <a href="#"><i class='bx bxl-facebook'></i></a>
                             <a href="#"><i class='bx bxl-github'></i></a>
                             <a href="#"><i class='bx bxl-linkedin'></i></a>
-                        </div> -->
+                        </div>
                     </form>
                 </div>
 
                 <div class="form-box register">
+
+
                     <form action="#">
                         <h1>Registration</h1>
                         <div class="row">
-                            <div class="col-lg-6">
-                                <div class="input-box">
-                                    <input type="text" placeholder="Username" required>
-                                    <i class='bx bxs-user'></i>
-                                </div>
-
-                                <div class="input-box">
-                                    <input type="password" placeholder="Password" required>
-                                    <i class='bx bxs-lock-alt'></i>
-                                </div>
-                                <div class="input-box">
-                                    <input type="number" placeholder="+91" required>
-                                    <i class='bx bxs-phone'></i>
-                                </div>
+                            <div class="redio d-flex mt-3 text-center">
+                                <input type="radio" id="tab1" name="tab" checked>
+                                <label for="tab1">Visitor</label>
+                                <input type="radio" id="tab2" name="tab">
+                                <label for="tab2">Merchant</label>
+                                <input type="radio" id="tab3" name="tab">
+                                <label for="tab3">Sou User</label>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="input-box">
-                                    <input type="text" placeholder="Full Name" required>
-                                    <i class='bx bxs-user'></i>
-                                </div>
+                            
+                            <article>
+                                <h2>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="input-box">
+                                                <input type="text" placeholder="Username" required>
+                                                <i class='bx bxs-user'></i>
+                                            </div>
 
-                                <div class="input-box">
-                                    <input type="password" placeholder="Confrim Password" required>
-                                    <i class='bx bxs-lock-alt'></i>
-                                </div>
-                                <div class="input-box">
-                                    <select class="input" aria-label="Default select example">
-                                        <option selected>Select User Type</option>
-                                        <option value="1">Visitor</option>
-                                        <option value="2">Marchant</option>
-                                        <option value="3">SOU Users</option>
-                                    </select>
+                                            <div class="input-box">
+                                                <input type="password" placeholder="Password" required>
+                                                <i class='bx bxs-lock-alt'></i>
+                                            </div>
+                                            <div class="input-box mb-1">
+                                                <input type="number" placeholder="+91" required>
+                                                <i class='bx bxs-phone'></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="input-box">
+                                                <input type="text" placeholder="Full Name" required>
+                                                <i class='bx bxs-user'></i>
+                                            </div>
 
-                                </div>
-                            </div>
+                                            <div class="input-box">
+                                                <input type="password" placeholder="Confrim Password" required>
+                                                <i class='bx bxs-lock-alt'></i>
+                                            </div>
+                                            <div class="input-box mb-1">
+                                                <select class="input" aria-label="Default select example">
+                                                    <option selected>Select User Type</option>
+                                                    <option value="1">Visitor</option>
+                                                    <option value="2">Marchant</option>
+                                                    <option value="3">SOU Users</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="input-box">
+                                                <input type="email" placeholder="Email" required>
+                                                <i class='bx bxs-envelope'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </h2>
+                            </article>
+                            <article>
+                                <h2>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="input-box">
+                                                <input type="text" placeholder="Username" required>
+                                                <i class='bx bxs-user'></i>
+                                            </div>
+
+                                            <div class="input-box">
+                                                <input type="password" placeholder="Password" required>
+                                                <i class='bx bxs-lock-alt'></i>
+                                            </div>
+                                            <div class="input-box mb-1">
+                                                <input type="number" placeholder="+91" required>
+                                                <i class='bx bxs-phone'></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="input-box">
+                                                <input type="text" placeholder="Full Name" required>
+                                                <i class='bx bxs-user'></i>
+                                            </div>
+
+                                            <div class="input-box">
+                                                <input type="password" placeholder="Confrim Password" required>
+                                                <i class='bx bxs-lock-alt'></i>
+                                            </div>
+                                            <div class="input-box mb-1">
+                                                <select class="input" aria-label="Default select example">
+                                                    <option selected>Select User Type</option>
+                                                    <option value="1">Visitor</option>
+                                                    <option value="2">Marchant</option>
+                                                    <option value="3">SOU Users</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="input-box">
+                                                <input type="email" placeholder="Email" required>
+                                                <i class='bx bxs-envelope'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </h2>
+                            </article>
+                            <article>
+                                <h2>article3</h2>
+                            </article>
+
                         </div>
 
                         <button type="submit" class="btn-log" data-bs-target="#exampleModalToggle2"
-                        data-bs-toggle="modal">Register</button>
-                        <!-- <p>or register with social platforms</p>
+                            data-bs-toggle="modal">Register</button>
+                        <p>or register with social platforms</p>
                         <div class="social-icons">
                             <a href="#"><i class='bx bxl-google'></i></a>
                             <a href="#"><i class='bx bxl-facebook'></i></a>
                             <a href="#"><i class='bx bxl-github'></i></a>
                             <a href="#"><i class='bx bxl-linkedin'></i></a>
-                        </div> -->
+                        </div>
                     </form>
+
+
+
+
                 </div>
 
                 <div class="toggle-box">
@@ -216,8 +304,8 @@
         </div>
     </div>
     <!-- Services End -->
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-        tabindex="-1">
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" data-bs-backdrop='static'
+        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -234,7 +322,7 @@
                         </div>
                     </form>
                     <div class="col-12">
-                        <button class="btn-log btn-primary" data-bs-target="#exampleModalToggle2"
+                        <button class="btn-log btn-primary" data-bs-target="#exampleModalToggle3"
                             data-bs-toggle="modal">Get OTP</button>
                     </div>
                     <form class="row g-3 needs-validation" novalidate>
@@ -254,24 +342,33 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-        tabindex="-1">
+    <div class="modal fade" id="exampleModalToggle2" data-bs-backdrop='static' aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">OTP</h1>
-                    <button type="buttonn" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">OTP Verification</h1>
+                    <button type="buttonn" class="btn-close" data-bs-dismiss="modal" data-backdrop="static"
+                        data-keyboard="false" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="container">
-                        <h1>OTP Verification</h1>
+
                         <p>Enter the OTP you received to <span id="email"></span></p>
                         <div class="otp-input">
                             <input type="number" min="0" max="9" required>
                             <input type="number" min="0" max="9" required>
                             <input type="number" min="0" max="9" required>
                             <input type="number" min="0" max="9" required>
-                           
+
+                        </div>
+                        <p>Enter the OTP you received Phone <span id="phone"></span></p>
+                        <div class="otp-input">
+                            <input type="number" min="0" max="9" required>
+                            <input type="number" min="0" max="9" required>
+                            <input type="number" min="0" max="9" required>
+                            <input type="number" min="0" max="9" required>
+
                         </div>
                         <button onclick="verifyOTP()" class="btn-log">Verify</button>
                         <div class="resend-text">
@@ -281,12 +378,51 @@
                         </div>
                     </div>
                 </div>
-                
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel3">OTP Verification</h1>
+                    <button type="buttonn" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+
+                        <p>Enter the OTP you received to <span id="email"></span></p>
+                        <div class="otp-input">
+                            <input type="number" min="0" max="9" required>
+                            <input type="number" min="0" max="9" required>
+                            <input type="number" min="0" max="9" required>
+                            <input type="number" min="0" max="9" required>
+
+                        </div>
+                        <!-- <p>Enter the OTP you received Phone <span id="phone"></span></p>
+                    <div class="otp-input">
+                        <input type="number" min="0" max="9" required>
+                        <input type="number" min="0" max="9" required>
+                        <input type="number" min="0" max="9" required>
+                        <input type="number" min="0" max="9" required>
+                       
+                    </div> -->
+                        <button onclick="verifyOTP()" class="btn-log">Verify</button>
+                        <div class="resend-text">
+                            Didn't receive the code?
+                            <span class="resend-link" onclick="resendOTP()">Resend Code</span>
+                            <span id="timer"></span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-
-
     <!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
         <div class="container py-5">
@@ -370,6 +506,7 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
     <!-- Template Javascript -->
@@ -393,12 +530,14 @@
         const timerDisplay = document.getElementById('timer');
         const resendLink = document.querySelector('.resend-link');
         const emailSpan = document.getElementById('email');
+        const phoneSpan = document.getElementById('phone');
         let timeLeft = 120; // 2 minutes in seconds
         let timerId;
         let canResend = true;
 
         // Simulating an email for demonstration
         emailSpan.textContent = "user@example.com";
+        phoneSpan.textContent = "+91 7041867446";
 
         function startTimer() {
             timerId = setInterval(() => {
@@ -472,6 +611,25 @@
         }
 
         startTimer();
+
+        $('[name=tab]').each(function (i, d) {
+            var p = $(this).prop('checked');
+            //   console.log(p);
+            if (p) {
+                $('article').eq(i)
+                    .addClass('on');
+            }
+        });
+
+        $('[name=tab]').on('change', function () {
+            var p = $(this).prop('checked');
+
+            // $(type).index(this) == nth-of-type
+            var i = $('[name=tab]').index(this);
+
+            $('article').removeClass('on');
+            $('article').eq(i).addClass('on');
+        });
     </script>
 </body>
 
