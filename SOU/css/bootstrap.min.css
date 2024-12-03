@@ -4947,7 +4947,7 @@ fieldset:disabled .btn {
 
 .card-footer {
     padding: .5rem 1rem;
-    background-color: rgba(0, 0, 0, .03);
+    background-color: #003a66;
     border-top: 1px solid rgba(0, 0, 0, .125)
 }
 
