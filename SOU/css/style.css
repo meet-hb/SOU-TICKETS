@@ -1399,6 +1399,34 @@ form {
     background-repeat: no-repeat;
     background-position: center;
   }
+  .form-control{
+    border: 2px solid #f4984a;
+  }
+  .cart-title{
+    font-size: 15px;
+  }
+  .Price-card{
+    border: 2px dotted #f4984a;
+  }
+  .price-heading{
+    color: #f4984a;
+  }
+  .price-data{
+    color: #003A66;
+  }
+  .note-details{
+    color: #003A66;
+  }
+  .highlight{
+    color: #f4984a;
+  }
+  .add-place{
+    text-decoration: none;
+    list-style: none;
+  }
+  .font-select{
+    font-size: 13px;
+  }
   
 
 
