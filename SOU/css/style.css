@@ -1555,13 +1555,25 @@ span {
     margin: 40px auto;
     border-bottom: solid 4px #28a745;
 }
+._successful{
+    box-shadow: 0 15px 25px #00000019;
+    padding: 45px;
+    width: 100%;
+    text-align: center;
+    margin: 40px auto;
+    border-bottom: solid 4px #f4984a;
+}
 
 ._success i {
     font-size: 55px;
     color: #28a745;
 }
+._successful i{
+    font-size: 55px;
+    color: #f4984a;
+}
 
-._success h2 {
+._success h2,._successful {
     margin-bottom: 12px;
     font-size: 40px;
     font-weight: 500;
@@ -1569,9 +1581,9 @@ span {
     margin-top: 10px;
 }
 
-._success p {
+._success p,._successful {
     margin-bottom: 0px;
-    font-size: 18px;
+    font-size: 15px;
     color: #495057;
     font-weight: 500;
 }

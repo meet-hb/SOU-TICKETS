@@ -135,3 +135,59 @@ $(document).ready(function() {
 });
 
 
+$("#FileInput").on('change',function (e) {
+    var labelVal = $(".title").text();
+    var oldfileName = $(this).val();
+        fileName = e.target.value.split( '\\' ).pop();
+
+        if (oldfileName == fileName) {return false;}
+        var extension = fileName.split('.').pop();
+
+    if ($.inArray(extension,['Excel']) >= 0) {
+        $(".filelabel i").removeClass().addClass('fa fa-file-excel-o');
+        $(".filelabel i, .filelabel .title").css({'color':'#208440'});
+        $(".filelabel").css({'border':' 2px solid #208440'});
+    }
+    
+
+    if(fileName ){
+        if (fileName.length > 10){
+            $(".filelabel .title").text(fileName.slice(0,4)+'...'+extension);
+        }
+        else{
+            $(".filelabel .title").text(fileName);
+        }
+    }
+    else{
+        $(".filelabel .title").text(labelVal);
+    }
+});
+$("#FileInput1").on('change',function (e) {
+    var labelVal = $(".title").text();
+    var oldfileName = $(this).val();
+        fileName = e.target.value.split( '\\' ).pop();
+
+        if (oldfileName == fileName) {return false;}
+        var extension = fileName.split('.').pop();
+
+    if ($.inArray(extension,['jpg','pdf','png']) >= 0) {
+        $(".filelabel i").removeClass().addClass('fa fa-file-image-o');
+        $(".filelabel i, .filelabel .title").css({'color':'#208440'});
+        $(".filelabel").css({'border':' 2px solid #208440'});
+    }
+    
+
+    if(fileName ){
+        if (fileName.length > 10){
+            $(".filelabel .title").text(fileName.slice(0,4)+'...'+extension);
+        }
+        else{
+            $(".filelabel .title").text(fileName);
+        }
+    }
+    else{
+        $(".filelabel .title").text(labelVal);
+    }
+});
+
+

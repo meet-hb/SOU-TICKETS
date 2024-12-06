@@ -254,38 +254,47 @@
         -webkit-transform: scale(1.02) perspective(1000px);
         transform: scale(1.02) perspective(1000px);
     }
-    .filelabel {
-    /* width: 120px; */
-    border: 2px dashed #f4984a;
-    border-radius: 10px;
-    display: block;
-    padding: 5px;
-    transition: border 300ms ease;
-    cursor: pointer;
-    text-align: center;
-    margin: 0;
-}
-.filelabel i {
-    display: block;
-    font-size: 30px;
-    padding-bottom: 5px;
-}
-.filelabel i,
-.filelabel .title {
-  color: grey;
-  transition: 200ms color;
-}
-.filelabel:hover {
-  border: 2px solid #003A66;
-}
-.filelabel:hover i,
-.filelabel:hover .title {
-  color: #003A66;
-}
-#FileInput,#FileInput1{
-    display:none;
-}
 
+    .filelabel {
+        /* width: 120px; */
+        border: 2px dashed #f4984a;
+        border-radius: 10px;
+        display: block;
+        padding: 5px;
+        transition: border 300ms ease;
+        cursor: pointer;
+        text-align: center;
+        margin: 0;
+    }
+
+    .filelabel i {
+        display: block;
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+
+    .filelabel i,
+    .filelabel .title {
+        color: grey;
+        transition: 200ms color;
+    }
+
+    .filelabel:hover {
+        border: 2px solid #003A66;
+    }
+
+    .filelabel:hover i,
+    .filelabel:hover .title {
+        color: #003A66;
+    }
+
+    #FileInput,
+    #FileInput1 {
+        display: none;
+    }
+    .successful  i{
+        color: #f4984a;
+    }
 </style>
 
 <body>
@@ -363,15 +372,15 @@
                     <div class="progress-bar">
                         <div class="step step-1 active"><span class="num"> 1</span>
                             <div class="fa fa-check opaque"></div>
-                            <div class="step-label">Add Passanger</div>
+                            <div class="step-label">Group Details</div>
                         </div>
                         <div class="step step-2"><span class="num"> 2</span>
                             <div class="fa fa-check opaque"></div>
-                            <div class="step-label">Book Tickets</div>
+                            <div class="step-label">Request Group Booking</div>
                         </div>
                         <div class="step step-3"><span class="num"> 3</span>
                             <div class="fa fa-check opaque"></div>
-                            <div class="step-label">Contact Details</div>
+                            <div class="step-label">Pending Approval</div>
                         </div>
                         <div class="step step-4"><span class="num"> 4</span>
                             <div class="fa fa-check opaque"></div>
@@ -410,9 +419,11 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-8 text-end align-items-center">
-                                                <input type="radio" class="form-check-input" id="tab1" name="tab" checked>
-                                                <label for="tab1" style="color: #fff;" class="mt-1">General Booking</label>
-                                                
+
+                                                <input type="radio" class="form-check-input" id="tab2" name="tab"
+                                                    checked>
+                                                <label for="tab2" style="color: #fff;" class="mt-1">Group
+                                                    Booking</label>
                                             </div>
                                         </h6>
                                     </div>
@@ -423,65 +434,108 @@
                                             but here you need to register all visitors. Maximum 6 visitors possible in
                                             one booking. Incase of more than 6 visitors, you are requested to do
                                             multiple bookings. </p>
+
                                         <article>
                                             <section class="vs-checkout-wrapper space">
                                                 <div class="container">
                                                     <form action="#" class="woocommerce-checkout">
-                                                        <div class="row p-5">
+                                                        <div class="row p-2 justify-content-center">
+                                                            <h2 class="h4">Group Booking Details</h2>
                                                             <div class="col-lg-12">
-                                                                <h2 class="h4">Enter Member Details</h2>
+
                                                                 <div id="attributes">
                                                                     <div class="attr">
                                                                         <div class="row">
-
-                                                                            <div class="col-md-2 form-group">
+                                                                            <div class="col-md-12 form-group">
+                                                                                <label for="name"
+                                                                                    class="mb-1">Organization
+                                                                                    Name</label>
                                                                                 <input type="text" class="form-control"
-                                                                                    placeholder="Name">
+                                                                                    placeholder="Ex. Hackberry Softech Private Limited">
                                                                             </div>
-                                                                            <div class="col-md-2 form-group">
+
+
+                                                                        </div>
+                                                                        <div class="row mt-2">
+                                                                            <div class="col-md-6 form-group">
+                                                                                <label for="name" class="mb-1">Group
+                                                                                    Type</label>
                                                                                 <select class="form-select" name="name">
                                                                                     <option value selected="selected"
                                                                                         disabled="disabled" hidden>
-                                                                                        Gender</option>
-                                                                                    <option value>Male</option>
-                                                                                    <option value>Female</option>
+                                                                                        Ex. Information Technology
+                                                                                        Sector</option>
+                                                                                    <option value>Education Sector
+                                                                                    </option>
+                                                                                    <option value>Medical Sector
+                                                                                    </option>
+                                                                                    <option value>Sports Sector</option>
+                                                                                    <option value>Agriclture Sector
+                                                                                    </option>
+                                                                                    <option value>Government Sector
+                                                                                    </option>
+                                                                                    <option value>State Government
+                                                                                        Sector</option>
+                                                                                    <option value>Real Estate Sector
+                                                                                    </option>
+                                                                                    <option value>Information Technology
+                                                                                        Sector</option>
 
                                                                                 </select>
                                                                             </div>
-                                                                            <div class="col-md-2 form-group">
-                                                                                <input type="number"
-                                                                                    class="form-control"
-                                                                                    placeholder="Age">
+                                                                            <div class="col-md-3 form-group">
+                                                                                <label for="name" class="mb-1">Total
+                                                                                    Indian Visitor</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    placeholder="Ex. 21">
                                                                             </div>
-                                                                            <div class="col-md-2 form-group">
-                                                                                <select class="form-select" name="name">
-                                                                                    <option value selected="selected"
-                                                                                        disabled="disabled" hidden>
-                                                                                        Country</option>
-                                                                                    <option value>India</option>
-                                                                                    <option value>USA</option>
+                                                                            <div class="col-md-3 form-group">
+                                                                                <label for="name" class="mb-1">Total
+                                                                                    Foreigner Visitor</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    placeholder="Ex. 21">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mt-3">
+                                                                            <div class="col-md-6 form-group">
+                                                                                <h5>Upload Your Member's Details In
+                                                                                    Excel format</h5>
+                                                                                <p><a href="#"><span
+                                                                                            style="color: #f4984a; font-weight: 600;">Download</span></a>
+                                                                                    Excel Format and Upload with your
+                                                                                    Details</p>
+                                                                                <label class="filelabel">
+                                                                                    <i class="fa fa-paperclip">
+                                                                                    </i>
+                                                                                    <span class="title">
+                                                                                        Add File
+                                                                                    </span>
+                                                                                    <input class="FileUpload1"
+                                                                                        id="FileInput"
+                                                                                        name="booking_attachment"
+                                                                                        type="file" />
+                                                                                </label>
 
-                                                                                </select>
                                                                             </div>
-                                                                            <div class="col-md-2 form-group">
-                                                                                <select class="form-select" name="name">
-                                                                                    <option value selected="selected"
-                                                                                        disabled="disabled" hidden>
-                                                                                        State</option>
-                                                                                    <option value>Gujarat</option>
-                                                                                    <option value>Maharashtra</option>
+                                                                            <div class="col-md-6 form-group">
+                                                                                <h5>Upload Your Organization Details
+                                                                                    Letter pad</h5>
+                                                                                <p><a href="#"><span
+                                                                                            style="color: #f4984a; font-weight: 600;">Download</span></a>
+                                                                                    Letter pad Format and Upload with
+                                                                                    your Details</p>
+                                                                                <label class="filelabel">
+                                                                                    <i class="fa fa-paperclip">
+                                                                                    </i>
+                                                                                    <span class="title">
+                                                                                        Add File
+                                                                                    </span>
+                                                                                    <input class="FileUpload1"
+                                                                                        id="FileInput1"
+                                                                                        name="booking_attachment"
+                                                                                        type="file" />
+                                                                                </label>
 
-                                                                                </select>
-                                                                            </div>
-                                                                            <div class="col-md-2">
-                                                                                <button
-                                                                                    class="quantity-plus qut-btn  add btn btn-primary">
-                                                                                    <i class="fas fa-plus"></i>
-                                                                                </button>
-                                                                                <button
-                                                                                    class="quantity-minus qut-btn  remove btn btn-primary">
-                                                                                    <i class="fas fa-minus"></i>
-                                                                                </button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -492,7 +546,6 @@
                                                 </div>
                                             </section>
                                         </article>
-                                       
                                     </div>
                                 </div>
                             </div>
@@ -997,52 +1050,23 @@
 
             <section id="section3" class="section3" style="display:none;">
                 <div class="container mt-lg-5">
-                    <div class="card">
-                        <div class="row p-5">
-                            <h2>User Details</h2>
-                            <div class="col-lg-12">
-                                <div class="form">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <label for="name">First Name *</label>
-                                                <input type="text" class="form-control" id="name" name="name"
-                                                    required="">
 
-                                            </div>
-
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <label for="name">Last Name *</label>
-                                                <input type="text" class="form-control" id="name" name="name"
-                                                    required="">
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-2">
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <label for="name">Contact No *</label>
-                                                <input type="number" class="form-control" id="name" name="name"
-                                                    required="">
-
-                                            </div>
-
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <label for="name">Email Id *</label>
-                                                <input type="email" class="form-control" id="name" name="name"
-                                                    required="">
-
-                                            </div>
-                                        </div>
+                    <div class="row p-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-5">
+                                    <div class="message-box _successful">
+                                        <i class="fas fa-user-clock mb-2" aria-hidden="true"></i>
+                                        
+                                        <h4> Your Tickets Booking was Pending </h4>
+                                        <p> Please Wait For the Admin Approval <br>
+                                            Once You will get Approval You will get Notification </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
             </section>
             <section id="section4" class="section4" style="display:none;">
                 <div class="container mt-lg-5">
@@ -1373,8 +1397,8 @@
                             <div class="message-box _success">
                                 <i class="fa fa-check-circle" aria-hidden="true"></i>
                                 <h2> Your payment was successful </h2>
-                                <p> Thank you for your payment. we will <br>
-                                    be in contact with more details shortly </p>
+                                <p> Please Wait For the Admin Approval <br>
+                                    Once You will get Approval You will get Notification </p>
                             </div>
                         </div>
                     </div>

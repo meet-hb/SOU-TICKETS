@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>SOU</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
-    
-        <!-- Google Web Fonts -->
-        <link rel="icon" type="image/x-icon" href="sou2.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap"
-            rel="stylesheet">
-    
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    
-        <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    
-    
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-    
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+
+<head>
+    <meta charset="utf-8">
+    <title>SOU</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="icon" type="image/x-icon" href="sou2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    article{
+  /* background: #ccc; */
+  /* height: 200px; */
+  display: none;
+}
+article.on{
+  display: block;
+}
+</style>
+
 <body>
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -90,193 +102,459 @@
             </div>
         </div>
     </div>
-     <!-- Services Start -->
-     <div class="container-fluid service overflow-hidden pt-5">
+    <!-- Services Start -->
+    <div class="container-fluid service overflow-hidden pt-3">
         <div class="container py-5">
-            <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="sub-style">
-                    <h5 class="sub-title text-primary px-3">Attrection </h5>
-                </div>
-                <h1 class="display-5 mb-4">TOP SOU Attrections</h1>
-                <p class="mb-0">Book SOU Tickets and Explore More Abou Statue Of Unity.</p>
+            <div class="card p-2" style="background-color: #003A66;">
+                <h6 class="h4 row d-flex justify-content-center align-items-center">
+                    <div class="col-lg-2 text-center">
+                        <div class="form-group col-md align-items-start m-0">
+                            <h4 class="mt-2" style="color: #fff;">Select Date</h4>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-2 p-0">
+                        <div class="form-group col-md align-items-start m-0 p-0">
+
+                            <input type="date" class="form-control" id="departure-date" name="departure-date"
+                                onkeydown="return false" required="" min="2024-11-27">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 text-end align-items-center">
+                        <input type="radio" class="form-check-input" id="tab1" name="tab" checked>
+                        <label for="tab1" style="color: #fff;" class="mt-1">General Booking</label>
+                        <input type="radio" class="form-check-input" id="tab2" name="tab">
+                        <label for="tab2" style="color: #fff;" class="mt-1">Group Booking</label>
+                    </div>
+                </h6>
+                
             </div>
-            <div class="row g-4">
-                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
-                        <div class="service-inner">
-                            <div class="service-img">
-                                <img src="img/service-1.jpg" class="img-fluid w-100 rounded" alt="Image">
-                            </div>
-                            <div class="service-title">
-                                <div class="service-title-name">
-                                    <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                        <a href="booking.html" class="h4 text-white mb-0">Jungle Safari</a>
-                                    </div>
-                                    <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="booking.html">Book Tickets</a>
+            
+            
+            <article>
+                <div class="section-title text-center mb-5 mt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="sub-style">
+                        <h5 class="sub-title text-primary px-3">Attrection </h5>
+                    </div>
+                    <h1 class="display-5 mb-4">TOP SOU Attrections</h1>
+                    <p class="mb-0">Book SOU Tickets and Explore More Abou Statue Of Unity.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item">
+                            <div class="service-inner">
+                                <div class="service-img">
+                                    <img src="img/service-1.jpg" class="img-fluid w-100 rounded" alt="Image">
                                 </div>
-                                <div class="service-content pb-4">
-                                    <a href="booking.html">
-                                        <h4 class="text-white mb-4 py-3">Jungle Safari</h4>
-                                    </a>
-                                    <div class="px-4">
-                                        <p class="mb-4">The Jungle Safari at Statue of Unity is a 375 acre park with
-                                            seven different levels ranging from an altitude or elevation of 29 meters to
-                                            180 meters.</p>
-                                        <a class="btn btn-primary border-secondary rounded-pill py-3 px-5"
+                                <div class="service-title">
+                                    <div class="service-title-name">
+                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                            <a href="booking.html" class="h4 text-white mb-0">Jungle Safari</a>
+                                        </div>
+                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4"
                                             href="booking.html">Book Tickets</a>
                                     </div>
+                                    <div class="service-content pb-4">
+                                        <a href="booking.html">
+                                            <h4 class="text-white mb-4 py-3">Jungle Safari</h4>
+                                        </a>
+                                        <div class="px-4">
+                                            <p class="mb-4">The Jungle Safari at Statue of Unity is a 375 acre park with
+                                                seven different levels ranging from an altitude or elevation of 29
+                                                meters to
+                                                180 meters.</p>
+                                            <a class="btn btn-primary border-secondary rounded-pill py-3 px-5"
+                                                href="booking.html">Book Tickets</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
-                        <div class="service-inner">
-                            <div class="service-img">
-                                <img src="img/service-2.jpg" class="img-fluid w-100 rounded" alt="Image">
-                            </div>
-                            <div class="service-title">
-                                <div class="service-title-name">
-                                    <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                        <a href="booking.html" class="h4 text-white mb-0">Butterfly Garden</a>
-                                    </div>
-                                    <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="booking.html">Book Tickets</a>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item">
+                            <div class="service-inner">
+                                <div class="service-img">
+                                    <img src="img/service-2.jpg" class="img-fluid w-100 rounded" alt="Image">
                                 </div>
-                                <div class="service-content pb-4">
-                                    <a href="booking.html">
-                                        <h4 class="text-white mb-4 py-3">Butterfly Garden</h4>
-                                    </a>
-                                    <div class="px-4">
-                                        <p class="mb-4">This Butterfly Garden harbors more than 70 species of
-                                            butterflies. The garden covers 10 acres of area with 150 species of nectar
-                                            plants and larval host plants.</p>
-                                        <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5"
+                                <div class="service-title">
+                                    <div class="service-title-name">
+                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                            <a href="booking.html" class="h4 text-white mb-0">Butterfly Garden</a>
+                                        </div>
+                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4"
                                             href="booking.html">Book Tickets</a>
                                     </div>
+                                    <div class="service-content pb-4">
+                                        <a href="booking.html">
+                                            <h4 class="text-white mb-4 py-3">Butterfly Garden</h4>
+                                        </a>
+                                        <div class="px-4">
+                                            <p class="mb-4">This Butterfly Garden harbors more than 70 species of
+                                                butterflies. The garden covers 10 acres of area with 150 species of
+                                                nectar
+                                                plants and larval host plants.</p>
+                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5"
+                                                href="booking.html">Book Tickets</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item">
-                        <div class="service-inner">
-                            <div class="service-img">
-                                <img src="img/service-3.jpg" class="img-fluid w-100 rounded" alt="Image">
-                            </div>
-                            <div class="service-title">
-                                <div class="service-title-name">
-                                    <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                        <a href="booking.html" class="h4 text-white mb-0">Cactus Garden</a>
-                                    </div>
-                                    <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="booking.html">Book Tickets</a>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item">
+                            <div class="service-inner">
+                                <div class="service-img">
+                                    <img src="img/service-3.jpg" class="img-fluid w-100 rounded" alt="Image">
                                 </div>
-                                <div class="service-content pb-4">
-                                    <a href="booking.html">
-                                        <h4 class="text-white mb-4 py-3">Cactus Garden</h4>
-                                    </a>
-                                    <div class="px-4">
-                                        <p class="mb-4">The Cactus Garden is a unique botanical garden at the Statue of
-                                            Unity site, created to exhibit a huge variety of Cacti and succulents.</p>
-                                        <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5"
+                                <div class="service-title">
+                                    <div class="service-title-name">
+                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                            <a href="booking.html" class="h4 text-white mb-0">Cactus Garden</a>
+                                        </div>
+                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4"
                                             href="booking.html">Book Tickets</a>
                                     </div>
+                                    <div class="service-content pb-4">
+                                        <a href="booking.html">
+                                            <h4 class="text-white mb-4 py-3">Cactus Garden</h4>
+                                        </a>
+                                        <div class="px-4">
+                                            <p class="mb-4">The Cactus Garden is a unique botanical garden at the Statue
+                                                of
+                                                Unity site, created to exhibit a huge variety of Cacti and succulents.
+                                            </p>
+                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5"
+                                                href="booking.html">Book Tickets</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
-                        <div class="service-inner">
-                            <div class="service-img">
-                                <img src="img/service-4.jpg" class="img-fluid w-100 rounded" alt="Image">
-                            </div>
-                            <div class="service-title">
-                                <div class="service-title-name">
-                                    <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                        <a href="booking.html" class="h4 text-white mb-0">Valley Of Flowers</a>
-                                    </div>
-                                    <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="booking.html">Book Tickets</a>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item">
+                            <div class="service-inner">
+                                <div class="service-img">
+                                    <img src="img/service-4.jpg" class="img-fluid w-100 rounded" alt="Image">
                                 </div>
-                                <div class="service-content pb-4">
-                                    <a href="booking.html">
-                                        <h4 class="text-white mb-4 py-3">Valley Of Flowers</h4>
-                                    </a>
-                                    <div class="px-4">
-                                        <p class="mb-4">The Valley of Flowers (also known as Bharat Van), is spread
-                                            across 24 acres of land and is a haven for colourful flowering plants along
-                                            the bank of river Narmada.</p>
-                                        <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5"
+                                <div class="service-title">
+                                    <div class="service-title-name">
+                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                            <a href="booking.html" class="h4 text-white mb-0">Valley Of Flowers</a>
+                                        </div>
+                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4"
                                             href="booking.html">Book Tickets</a>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
-                        <div class="service-inner">
-                            <div class="service-img">
-                                <img src="img/service-5.jpg" class="img-fluid w-100 rounded" alt="Image">
-                            </div>
-                            <div class="service-title">
-                                <div class="service-title-name">
-                                    <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                        <a href="booking.html" class="h4 text-white mb-0">Laser Show</a>
-                                    </div>
-                                    <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="booking.html">Book Tickets</a>
-                                </div>
-                                <div class="service-content pb-4">
-                                    <a href="booking.html">
-                                        <h4 class="text-white mb-4 py-3">Laser Show</h4>
-                                    </a>
-                                    <div class="px-4">
-                                        <p class="mb-4">The laser show takes place every evening at 6:45 pm and uses a
-                                            combination of lasers, lights, sound, and narration to bring Patel's story
-                                            to life.</p>
-                                        <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5"
-                                            href="booking.html">Book Tickets </a>
+                                    <div class="service-content pb-4">
+                                        <a href="booking.html">
+                                            <h4 class="text-white mb-4 py-3">Valley Of Flowers</h4>
+                                        </a>
+                                        <div class="px-4">
+                                            <p class="mb-4">The Valley of Flowers (also known as Bharat Van), is spread
+                                                across 24 acres of land and is a haven for colourful flowering plants
+                                                along
+                                                the bank of river Narmada.</p>
+                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5"
+                                                href="booking.html">Book Tickets</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item">
-                        <div class="service-inner">
-                            <div class="service-img">
-                                <img src="img/service-6.jpg" class="img-fluid w-100 rounded" alt="Image">
-                            </div>
-                            <div class="service-title">
-                                <div class="service-title-name">
-                                    <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                        <a href="booking.html" class="h4 text-white mb-0">Pet Zone</a>
-                                    </div>
-                                    <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="booking.html">Book Tickets</a>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item">
+                            <div class="service-inner">
+                                <div class="service-img">
+                                    <img src="img/service-5.jpg" class="img-fluid w-100 rounded" alt="Image">
                                 </div>
-                                <div class="service-content pb-4">
-                                    <a href="booking.html">
-                                        <h4 class="text-white mb-4 py-3">Pet Zone</h4>
-                                    </a>
-                                    <div class="px-4">
-                                        <p class="mb-4">Where Compassion Meets Education Operational Hours: Morning:
-                                            9:00 AM - 12:00 PM (Final Exit 1:00 PM) Afternoon: 3:00 PM - 5:00 PM (Final
-                                            Exit 6:00 PM) (Maintenance Break: 1:00 PM - 3:00 PM) Embark on an
-                                            unforgettable journey at Pets Zone, a unique sanctuary where you can
-                                            experience the magic of the animal kingdom up close.</p>
-                                        <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5"
+                                <div class="service-title">
+                                    <div class="service-title-name">
+                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                            <a href="booking.html" class="h4 text-white mb-0">Laser Show</a>
+                                        </div>
+                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4"
                                             href="booking.html">Book Tickets</a>
                                     </div>
+                                    <div class="service-content pb-4">
+                                        <a href="booking.html">
+                                            <h4 class="text-white mb-4 py-3">Laser Show</h4>
+                                        </a>
+                                        <div class="px-4">
+                                            <p class="mb-4">The laser show takes place every evening at 6:45 pm and uses
+                                                a
+                                                combination of lasers, lights, sound, and narration to bring Patel's
+                                                story
+                                                to life.</p>
+                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5"
+                                                href="booking.html">Book Tickets </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item">
+                            <div class="service-inner">
+                                <div class="service-img">
+                                    <img src="img/service-6.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                </div>
+                                <div class="service-title">
+                                    <div class="service-title-name">
+                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                            <a href="booking.html" class="h4 text-white mb-0">Pet Zone</a>
+                                        </div>
+                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4"
+                                            href="booking.html">Book Tickets</a>
+                                    </div>
+                                    <div class="service-content pb-4">
+                                        <a href="booking.html">
+                                            <h4 class="text-white mb-4 py-3">Pet Zone</h4>
+                                        </a>
+                                        <div class="px-4">
+                                            <p class="mb-4">Where Compassion Meets Education Operational Hours: Morning:
+                                                9:00 AM - 12:00 PM (Final Exit 1:00 PM) Afternoon: 3:00 PM - 5:00 PM
+                                                (Final
+                                                Exit 6:00 PM) (Maintenance Break: 1:00 PM - 3:00 PM) Embark on an
+                                                unforgettable journey at Pets Zone, a unique sanctuary where you can
+                                                experience the magic of the animal kingdom up close.</p>
+                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5"
+                                                href="booking.html">Book Tickets</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-2">
+                        <a href="Group-booking.html">
+                            <button  class="btn-log mt-2">Proceed</button>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="container-fluid contact overflow-hidden pb-5 mt-3">
+                    <div class="container py-5">
+                        <div class="section-title text-center mb-5 wow ">
+                            <div class="sub-style">
+                                <h5 class="sub-title text-primary px-3">Important Instructions for Group Booking</h5>
+                            </div>
+                            <h6 class="display-5 mb-4">Statue Of Unity</h6>
+                            <!-- <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p> -->
+                        </div>
+                        <div class="office pt-2">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            List of Prohibited Items
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>The following items are not allowed inside the Statue of Unity Complex and to be
+                                                kept outside only.</strong>
+                                            <ol>
+                                                <li>Personal Items: Lighters, Scissors-metal with pointed tips, realistic replica of
+                                                    a toy weapon</li>
+                                                <li>Sharp Objects: Box Cutters, Ice Axes/Ice Picks, Knives (any length and any type
+                                                    except round-bladed, butter and plastic cutlery), Meat Cleavers, Razor-Type
+                                                    Blades such as box-cutters, utility knives, razor blades not in a cartridge, but
+                                                    excluding safety razors, sabres, swords.</li>
+                                                <li>
+                                                    Sporting Goods: Baseball Bats, Bows and Arrows, Cricket Bats, Golf Clubs,
+                                                    Hockey, Sticks, Lacrosse Sticks, Pool Cues, Ski Poles, Spear Guns.
+                                                </li>
+                                                <li>
+                                                    Guns and Firearm: Ammunition, BB Guns, Compressed Air Guns, Firearms, Parts of
+                                                    Guns and Firearms, Pellet Guns, Realistic replicas of Firearms, Starter Pistols.
+                                                </li>
+                                                <li>
+                                                    Tools: Axes and Hatchets, Cattle Prods, Crowbars, Hammers, Drills (including
+                                                    cordless portable power drills), Saws (including cordless portable power saws),
+                                                    Screwdrivers (except those in eyeglass repair kits), Tools (including but not
+                                                    limited to wrenches and pliers), Wrenches and Pliers.
+                                                </li>
+                                                <li>
+                                                    Martial Arts / Self Defence Items: Billy Clubs, Black Jacks, Brass knuckles,
+                                                    Kubatons, Mace / Pepper Spray, Martial Arts Weapons, Night Sticks, Nunchakus,
+                                                    Martial Arts / Self Defence Items, Stun Guns / Shocking Devices, Throwing Stars.
+                                                </li>
+                                                <li>
+                                                    Explosive Materials: Such as Flare Guns, Gun Lighters, and Gun Powder, Explosive
+                                                    Material.Blasting Caps, Dynamite, Fireworks, Flares (in any form). Hand
+                                                    Grenades, Plastic Explosives, and Realistic Replicas of Explosives.
+                                                </li>
+                                                <li>
+                                                    Compressed Gases: Such as (deeply refrigerated, flammable, non-flammable, and
+                                                    poisonous) Butane, Oxygen, Liquid Nitrogen and Aqualung Cylinders (deeply
+                                                    refrigerated, flammable, non-flammable and poisonous)
+                                                </li>
+                                                <li>
+                                                    Flammable Items: Such as Aerosol (any except for personal care or toiletries in
+                                                    limited quantities), Fuels(including cooking fuels and any flammable liquid
+                                                    fuel) Gasoline, Gas Torches, Lighter Fluid, Strike anywhere matches, Turpentine
+                                                    and Paint Thinner, realistic Replicas of Incendiaries
+                                                </li>
+                                                <li>
+                                                    Oxidizing Materials: Such as bleaching powder, peroxides.
+                                                </li>
+                                                <li>
+                                                    Poisonous and infectious substances: such as insecticides, weed-killers, and
+                                                    live virus materials, radioactive materials.
+                                                </li>
+                                                <li>
+                                                    Corrosives: Such as acids, alkalis, mercury, wet cell batteries (except those in
+                                                    wheelchairs), oven or drain cleaners.
+                                                </li>
+                                                <li>
+                                                    Other dangerous articles: Such as magnetized, offensive, or irritating
+                                                    materials. Briefcases and attache cases with installed alarm devices.
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Other Instructions
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ol>
+                                                <li>
+                                                    Visitors to take note that Statue of Unity Site Entry Opens at 08:00 AM and
+                                                    Closes at 06:00 PM.
+                                                </li>
+                                                <li>
+                                                    Payment Gateway Charges
+                                                    <ul>
+                                                        <li>
+                                                            No Charges for booking a ticket via Net Banking or Debit Card.
+                                                        </li>
+                                                        <li>
+                                                            No Charges for booking via Credit Card.
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    In case your Transaction failed, and the amount is deducted from your bank
+                                                    account.
+                                                    <ul>
+                                                        <li>
+                                                            Please mail failed Transaction screenshot and transaction id on Email,
+                                                            support@soutickets.in or call on 18002336600 between 8 am to 6 pm.
+                                                        </li>
+                                                        <li>
+                                                            If your complaint is not resolved within 7 working days then please
+                                                            contact on support@soutickets.in for reporting the matter/issue.
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    “SVPRET reserves the rights to cancel/refund your trip/booking”.
+                                                </li>
+                                                <li>
+                                                    To View Booked Tickets, Follow Below Steps.
+                                                    <ul>
+                                                        <li>
+                                                            Open https://soutickets.in/
+                                                        </li>
+                                                        <li>
+                                                            Click on "Login" (Top Right Corner of The Website)
+                                                        </li>
+                                                        <li>
+                                                            On the Login page, Enter the Mobile number from which you have booked
+                                                            the tickets and Click "Send OTP"
+                                                        </li>
+                                                        <li>
+                                                            On Receipt of One time Password, enter the OTP on Website, you will be
+                                                            redirected to Home Page
+                                                        </li>
+                                                        <li>
+                                                            On the Top Right side of the Website, Visitor can see three options
+                                                            Profile, Wallet, and My Bookings
+                                                        </li>
+                                                        <li>
+                                                            From the visible three options, Click "My Bookings"
+                                                        </li>
+                                                        <li>
+                                                            You Will be able to View your booking for SOU.
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    Visiting tourists to take note that SOU complex does not have a locker facility,
+                                                    therefore, it is advised not to carry any bags and other prohibited items like
+                                                    cigarettes, matchboxes, lighters, other inflammable items, intoxicants, and pets
+                                                    to SoU Complex.
+                                                </li>
+                                                <li>
+                                                    The bags are not allowed in statue of unity premises.
+                                                </li>
+                                                <li>
+                                                    Food items are not allowed inside the SoU complex. However, visitors are allowed
+                                                    to carry baby food and medicines.
+                                                </li>
+                                                <li>
+                                                    To cancel any of your pre-book tickets, please log in to our site and go to My
+                                                    Bookings section. You can see Cancel Ticket Option for each ticket which is
+                                                    future dated. On clicking "Cancel Ticket", the system will show refund amount as
+                                                    per standard cancellation policy. Once you accept, the system will initiate the
+                                                    refund process which will take 7-14 working days to reflect via the same payment
+                                                    method.
+                                                </li>
+                                                <li>
+                                                    There is Quota of 7000 Tickets, per day for the Viewing Gallery as per the
+                                                    capacity of the Elevator. Therefore, if Viewing Gallery tickets are sold out
+                                                    then you have to buy Entry Tickets only shown in a separate category. Please
+                                                    note that in the case when Viewing Gallery Tickets are sold out, then tickets
+                                                    will not be available at the Counters of the SOU also. Therefore, the visitors
+                                                    planning to visit Viewing Gallery are requested to plan and book Viewing Gallery
+                                                    Tickets as per the availability shown on the website.
+                                                </li>
+                                                <li>
+                                                    Please note that if your booking status is showing "Awaiting Confirmation from a
+                                                    bank", then please wait for 30 minutes and then recheck the status if you try
+                                                    multiple bookings within 30 minutes then SVPRET is not responsible for a refund.
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Ticket Cancellation Policy
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="policy text-center">
+                                                <img src="img/Screenshot 2024-11-20 191626.png" alt="">
+                                            </div>
+            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
         </div>
     </div>
     <!-- Services End -->
@@ -367,5 +645,26 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        $('[name=tab]').each(function(i,d){
+  var p = $(this).prop('checked');
+//   console.log(p);
+  if(p){
+    $('article').eq(i)
+      .addClass('on');
+  }    
+});  
+
+$('[name=tab]').on('change', function(){
+  var p = $(this).prop('checked');
+  
+  // $(type).index(this) == nth-of-type
+  var i = $('[name=tab]').index(this);
+  
+  $('article').removeClass('on');
+  $('article').eq(i).addClass('on');
+});
+    </script>
 </body>
+
 </html>
