@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SOU</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="icon" type="image/x-icon" href="sou2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    .navbar .dropdown-toggle::after {
+        border: none;
+        content: "\f107";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        vertical-align: middle;
+        display: none !important;
+    }
+
+    .User-Name {
+        font-size: 18px;
+        color: #f4984a;
+        font-weight: 800;
+    }
+
+    .form-control-plaintext {
+        color: #003A66;
+        font-weight: 800;
+    }
+
+    #change-image-button {
+        display: none;
+        text-align: center;
+        vertical-align: middle;
+        position: absolute;
+        top: 45%;
+        /* left: 20%; */
+        color: white;
+        font-size: 1em;
+        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    #profile-photo:hover #change-image-button {
+        display: block;
+    }
+
+    #profile-photo:hover #profile-src {
+        opacity: 0.5;
+    }
+
+    .scroll {
+        background-color: #f4984a;
+    }
+
+    #profile-photo {
+        padding: 6px;
+        display: block;
+        margin-bottom: 10px;
+        border-radius: 999999px;
+        position: relative;
+        max-width: 160px;
+        max-height: 160px;
+        border-color: #e2e2e2;
+        /* background-color: #999; */
+        overflow: hidden;
+    }
+
+    #profile-src {
+        box-sizing: border-box;
+        color: rgb(85, 85, 85);
+        display: block;
+        max-width: 100%;
+        text-align: center;
+        vertical-align: middle;
+        perspective-origin: 80px 80px;
+        transform-origin: 80px 80px;
+        border: 0px none rgb(85, 85, 85);
+        border-radius: 999999px 999999px 999999px 999999px;
+        outline: rgb(85, 85, 85) none 0px;
+    }
+
+    .scroller {
+        width: 300px;
+        height: 100px;
+        overflow-y: scroll;
+        scrollbar-color: pink lightblue;
+    }
+
+    #style-2::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+        background-color: #f4984a;
+    }
+
+    .scroll {
+        position: absolute;
+        right: 50%;
+        left: 50%;
+
+        &--top {
+            top: 10px;
+        }
+    }
+</style>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Navbar & Hero Start -->
+    <div class="container nav-bar p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="display-5 text-secondary m-0"><img src="sou2.png" class="img-fluid" alt=""></h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="Tickets-List.html" class="nav-item nav-link">Book Ticket</a>
+                    <a href="#" class="nav-item nav-link">Tourist Attractions</a>
+                    <!-- <a href="#" class="nav-item nav-link">How To Reach</a> -->
+                    <!-- <a href="service.html" class="nav-item nav-link">Service</a> -->
+                    <!-- <div class="nav-item dropdown">
+                    <a href="#" class="nav-link" data-bs-toggle="dropdown"><span class="dropdown-toggle">Stay and
+                            Accomodations</span></a>
+                    <div class="dropdown-menu m-0">
+                        <a href="#" class="dropdown-item">The Fern Sardar Sarovar Resort, EKTA NAGAR</a>
+                        <a href="#" class="dropdown-item">Tent City 1s</a>
+                        <a href="#" class="dropdown-item">Tent City 2</a>
+                        <a href="#" class="dropdown-item">Hotel BRG - Budget Accommodation</a>
+                        <a href="#" class="dropdown-item">SBB Ramada</a>
+                        <a href="#" class="dropdown-item">FORTUNE STATUE OF UNITY EKTA NAGAR Member ITC’s hotel
+                            group</a>
+                        <a href="#" class="dropdown-item">Comfort Inn</a>
+                        <a href="#" class="dropdown-item">Oyo Ekta Premium Houseboat</a>
+                    </div>
+                </div> -->
+                    <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+                </div>
+                <!-- <button class="btn btn-primary btn-md-square border-secondary mb-3 mb-md-3 mb-lg-0 me-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button> -->
+                <a href="login.html"
+                    class="btn btn-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0">Login</a>
+
+                <div class="nav-item dropdown">
+                    <button
+                        class="btn btn-primary border-secondary  py-2  mb-3 mb-md-3 mb-lg-0 mx-2 dropdown-toggle"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 50px;">
+                        <i class="far fa-user"></i>
+                    </button>
+                    <div class="dropdown-menu mt-4">
+                        <li><a href="myprofile.html" class="dropdown-item">My Profile</a></li>
+                        <li><a href="#" class="dropdown-item">My Bookings</a></li>
+                        <li><a href="#" class="dropdown-item">Log Out</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar & Hero End -->
+    <div class="bg-breadcrumb background-image">
+        <div class="container z-index-common">
+            <div class="breadcumb-content">
+                <h1 class="breadcumb-title">My Profile</h1>
+                <div class="breadcumb-menu-wrap">
+                    <ul class="breadcumb-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#"> My Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section Start -->
+    <div class="hero-section">
+        <div class="container py-5 p-5">
+            <div class="row">
+                <div class="col-3" style="box-shadow: 0 0 30px rgba(0, 0, 0, .2); height: 350px; border-radius: 20px;">
+                    <div class="card" style="border: none;">
+                        <nav id="navbar-example3"
+                            class="h-100 mt-lg-5 flex-column align-items-stretch justify-content-center  align-items-center text-jutify p-2">
+                            <div class="pro-image text-center p-2">
+                                <img src="img/testimonial-3.jpg" alt="" class="img-fluid"
+                                    style="border: 5px solid #999;">
+                            </div>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link active" href="#item-1"><i class="far fa-user"></i><span
+                                        class="mx-2">Profile</span></a>
+                                <a class="nav-link" href="#item-2"><i class="fas fa-sign-in-alt"></i><span class="mx-2">
+                                        Login Details</span></a>
+                                <a class="nav-link" href="#item-3"><i class="fas fa-power-off"></i><span class="mx-2">
+                                        Logout</span></a>
+                            </nav>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div data-bs-spy="scroll" class="scrollbar" id="style-2" data-bs-target="#navbar-example3"
+                        data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0"
+                        style="overflow: visible; height:900px; border-radius: 20px;">
+                        <div class="card" style="box-shadow: 0 0 30px rgba(0, 0, 0, .2); border: 1px solid #fff; border-radius: 20px;">
+                            <div id="item-1 p-2">
+                                <div class="container p-2">
+                                    <div class="card" style="border: none;">
+                                        <div class="row py-2 px-3">
+                                            <div class="card-title m-0 px-3 d-flex">
+                                                <div class="col-lg-6">
+                                                    <h2>Profile</h2>
+                                                    <p>Basic info, for a faster booking experience</p>
+                                                </div>
+                                                <div class="col-lg-6 text-end">
+                                                    <button type="button" class="btn btn-primary btn-secondry"
+                                                        style="border: none;"><i class="fas fa-pencil-alt"></i><span
+                                                            class="mx-2">Edit</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="personal-info ">
+                                                <div class="row">
+                                                    <div class="col-lg-10 p-0">
+                                                        <div class="mb-2 row px-2">
+                                                            <label for="staticUsername"
+                                                                class="col-sm-4 col-form-label User-Name">User Name:</label>
+                                                            <div class="col-sm-8">
+                                                                <input type="text" readonly class="form-control-plaintext"
+                                                                    id="staticUsername" value="Meet2564">
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-2 row px-2">
+                                                            <label for="staticUsername"
+                                                                class="col-sm-4 col-form-label User-Name">User Type:</label>
+                                                            <div class="col-sm-8">
+                                                                <input type="text" readonly class="form-control-plaintext"
+                                                                    id="staticUsername" value="General Visitor">
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-2 row px-2">
+                                                            <label for="staticUsername"
+                                                                class="col-sm-4 col-form-label User-Name">Full Name:</label>
+                                                            <div class="col-sm-8">
+                                                                <input type="text" readonly class="form-control-plaintext"
+                                                                    id="staticUsername" value="Nayak Meetkumar R">
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-2 row px-2">
+                                                            <label for="staticUsername"
+                                                                class="col-sm-4 col-form-label User-Name">Email:</label>
+                                                            <div class="col-sm-8">
+                                                                <input type="text" readonly class="form-control-plaintext"
+                                                                    id="staticUsername" value="example@gmail.com">
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-2 row px-2">
+                                                            <label for="staticUsername"
+                                                                class="col-sm-4 col-form-label User-Name">Mobile:</label>
+                                                            <div class="col-sm-8">
+                                                                <input type="text" readonly class="form-control-plaintext"
+                                                                    id="staticUsername" value="7041867446">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 p-0">
+                                                        <div id="profile-photo">
+                                                            <img src="img/testimonial-3.jpg" id="profile-src" />
+                                                            <input type="hidden" name="profile-src-container"
+                                                                id="profile-src-container" value="" />
+                                                            <a href="#" id="change-image-button">Change image</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+    
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-2" style="box-shadow: 0 0 30px rgba(0, 0, 0, .2); border: 1px solid #fff; border-radius: 20px;">
+                            <div id="item-2">
+                                <div class="container mt-3 p-2">
+                                    <div class="card" style="border: none;">
+    
+                                        <div class="row py-2 px-3">
+                                            <div class="card-title m-0 px-3 d-flex">
+                                                <div class="col-lg-6">
+                                                    <h2>Login Details</h2>
+                                                    <p>Manage your mobile number, email address and password</p>
+                                                </div>
+                                                <div class="col-lg-6 text-end">
+                                                    <button type="button" class="btn btn-primary btn-secondry"
+                                                        style="border: none;"><i class="fas fa-pencil-alt"></i><span
+                                                            class="mx-2">Edit</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="personal-info ">
+                                                <div class="mb-2 row px-2">
+                                                    <label for="staticUsername"
+                                                        class="col-sm-2 col-form-label User-Name">Mobile No:</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" readonly class="form-control-plaintext"
+                                                            id="staticUsername" value="7041867446">
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2 row px-2">
+                                                    <label for="staticUsername"
+                                                        class="col-sm-2 col-form-label User-Name">Email Id:</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" readonly class="form-control-plaintext"
+                                                            id="staticUsername" value="example@gmail.com">
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2 row px-2">
+                                                    <label for="staticUsername"
+                                                        class="col-sm-2 col-form-label User-Name">Password:</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" readonly class="form-control-plaintext"
+                                                            id="staticUsername" value="********">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-2" style="box-shadow: 0 0 30px rgba(0, 0, 0, .2); border: 1px solid #fff; border-radius: 20px;">
+                            <div id="item-3">
+                                <div class="container mt-3 p-2">
+                                    <div class="card" style="border: none;">
+    
+                                        <div class="row py-2 px-3">
+                                            <div class="card-title m-0 px-3 d-flex">
+                                                <div class="col-lg-6">
+                                                    <h2>Logout</h2>
+                                                    <p>Check all the devices where your account is logged in</p>
+                                                </div>
+    
+                                            </div>
+                                            <div class="personal-info ">
+                                                <button class="btn btn-primary btn-secondry border-0"><i
+                                                        class="fas fa-power-off"></i><span class="mx-2">
+                                                        Logout</span></button>
+    
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">Contact Info</h4>
+                        <a href=""><i class="fa fa-map-marker-alt me-2"></i> Ektanagar, Kevadiya, Gujarat</a>
+                        <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
+                        <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+                        <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                            <a class="btn mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">Opening Time</h4>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Tue - Sun:</h6>
+                            <p class="text-white mb-0">08.00 am to 06.00 pm</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Projection Mapping Show</h6>
+                            <p class="text-white mb-0">07.00 pm</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Vacation:</h6>
+                            <p class="text-white mb-0">All Monday is our vacation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="footer-item">
+                        <img src="sou2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-white"><a href="#" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>SOU Tickets Booking</a>, All right
+                        reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-white">
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    Designed By <a class="border-bottom text-white" href="https://hackberrysoftech.com/">Hackberry
+                        Softech Private Limited</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        const container = document.querySelector('.container');
+        const registerBtn = document.querySelector('.register-btn');
+        const loginBtn = document.querySelector('.login-btn');
+
+        registerBtn.addEventListener('click', () => {
+            container.classList.add('active');
+        })
+
+        loginBtn.addEventListener('click', () => {
+            container.classList.remove('active');
+        })
+
+
+        $('#change-image-button').click(function () {
+            var imgSrc = prompt("PROFILE_IMAGE_URL", "http://facebookcraze.com/wp-content/uploads/2009/12/funny_picture_for_a_facebook_prank.jpg");
+            if (imgSrc != null) {
+                $("#profile-src").attr('src', imgSrc);
+                $("#profile-src-container").val(imgSrc);
+            }
+        });
+
+    </script>
+</body>
+
+</html>
