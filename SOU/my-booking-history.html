@@ -152,6 +152,98 @@
             padding: 15px;
         }
     }
+
+    .othertripdatedetails {
+        /* margin-bottom: 1em; */
+        /* padding-top: 1em; */
+        min-height: 125px;
+        text-align: center;
+    }
+
+    .ottripdate {
+        font-size: 40px;
+        font-weight: 600;
+        color: #f4984a;
+    }
+
+    .travelname {
+        font-size: 14px;
+    }
+
+    .ottripyear {
+        display: block;
+        font-size: 14px;
+    }
+
+    .ottripyear {
+        /* margin-bottom: 3px; */
+    }
+
+    .ottripday {
+        font-weight: 700;
+        /* margin-bottom: 1em; */
+        color: #003A66;
+    }
+
+    .tripdet1,
+    .tripdet2 {
+        display: block;
+        float: left;
+    }
+
+    .CityDet,
+    .travelname {
+        display: block;
+        color: #003A66;
+        text-align: start;
+    }
+
+    .CityDet {
+        font-size: 14px;
+        padding-top: 10px;
+        font-weight: 700;
+        /* padding-bottom: 4px; */
+    }
+
+    .tripdet2 {
+        /* width: 32%; */
+        /* margin-left: 2em; */
+    }
+
+    .tripdet1,
+    .tripdet2 {
+        display: block;
+        /* float: left; */
+        text-align: start;
+    }
+
+    .boardingpt,
+    .boardingtxt {
+        display: block;
+        font-size: 14px;
+        color: #003A66;
+    }
+
+    .boardingtxt {
+        font-weight: 700;
+        /* padding-bottom: 11px; */
+        padding-top: 10px;
+    }
+
+    .boardingpt {
+        font-weight: 500;
+    }
+
+    .boardingpt,
+    .boardingtxt {
+        display: block;
+        font-size: 14px;
+        color: #003A66;
+    }
+
+    .btn-text {
+        font-size: 12px;
+    }
 </style>
 
 <body>
@@ -216,7 +308,6 @@
         </nav>
     </div>
     <!-- Navbar & Hero End -->
-    
     <!-- Hero Section Start -->
     <div class="hero-section">
         <div class="container p-5">
@@ -226,7 +317,7 @@
                     <main>
                         <input id="tab1" type="radio" name="tabs" checked>
                         <label for="tab1"><i class="fas fa-suitcase-rolling"></i><span
-                                class="mx-2">Upcoming</span></label>
+                                class="mx-2">Booking</span></label>
 
                         <input id="tab2" type="radio" name="tabs">
                         <label for="tab2"><i class="fas fa-ticket-alt"></i><span class="mx-2">Cancelled</span></label>
@@ -237,57 +328,356 @@
                         <section id="content1">
                             <div class="container p-0">
                                 <div class="booking-bag p-0">
-                                    <div class="card" style="box-shadow: 0 0 30px rgba(0, 0, 0, .2); border: 1px solid #fff; border-radius: 20px;">
-                                        <div class="row">
-                                            <div class="col-lg-3 p-4">
-                                                <img src="img/travel.gif" alt="" class="img-fluid" srcset="">
+
+                                    <div class="card p-2"
+                                        style="box-shadow: 0 0 30px rgba(0, 0, 0, .2); border: 1px solid #fff; border-radius: 20px;">
+                                        <div class="row ">
+                                            <div class="col-lg-3">
+                                                <!-- <img src="img/travel.gif" alt="" class="img-fluid" srcset=""> -->
+                                                <div class="othertripdatedetails">
+                                                    <span class="ottripdate">18</span>
+                                                    <span class="ottripyear">November 2024</span>
+                                                    <span class="ottripday">Monday</span>
+                                                    <span class="boardingtxt">Booking Id</span>
+                                                    <span class="boardingtxt p-0 "
+                                                        style="color: #f4984a;">0008546</span>
+                                                </div>
                                             </div>
-                                            <div class="col-lg-9 py-5">
-                                                <h5>Looks empty, you've no upcoming bookings.</h5>
-                                                <p>When you book a trip, you will see your itinerary here.</p>
+                                            <div class="col-lg-3">
+                                                <!-- <h5>Looks empty, you've no upcoming bookings.</h5>
+                                                <p>When you book a trip, you will see your itinerary here.</p> -->
+                                                <div class="tripdet1">
+                                                    <span class="CityDet">Total Tickets</span>
+                                                    <span class="boardingtxt p-0" style="color: #f4984a;">5</span>
+                                                    <span class="boardingtxt">Transection Id</span>
+                                                    <span class="boardingtxt p-0"
+                                                        style="color: #f4984a;">T2412111340558526</span>
+
+                                                    <span class="boardingtxt">Payment Method</span>
+                                                    <span class="boardingtxt p-0" style="color: #f4984a;">Google
+                                                        Pay</span>
+                                                </div>
+                                                <div class="tripdet1">
+
+
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 px-0 ">
+                                                <div class="tripdet2 text-center">
+                                                    <span class="CityDet">Scan qr for Tickets</span>
+                                                    <img src="img/qr.png" alt="" class="img-fluid"
+                                                        style="width: 100px;">
+                                                        
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="col-lg-3 px-0">
+                                                <div class="tripdet2 p-0 text-end">
+                                                    <span class="boardingtxt">
+                                                        <h5>Total Amout</h5>
+                                                    </span>
+                                                    <span class="boardingtxt p-0">
+                                                        <h5 style="color: #f4984a;">₹10551 /-</h5>
+                                                    </span>
+                                                    <a href="#"
+                                                    class="btn btn-primary border-secondary rounded-pill p-1 m-0 btn-text mt-lg-2 mx-lg-4">Download</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- model -->
+                        <!-- <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Booking Details</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <h5>Tickets</h5>
+                                                <p>
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <ul style="color: #f4984a;">
+                                                            <li>Sou Viewing Gallery</li>
+                                                            <li>Jungle Safari</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <ul style="color: #f4984a;">
+                                                            <li>Narmada Aarti</li>
+                                                            <li>Vishwa Van</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
-                        </section>
-                        <section id="content2">
-                            <div class="container p-0">
-                                <div class="booking-bag p-0">
-                                    <div class="card" style="box-shadow: 0 0 30px rgba(0, 0, 0, .2); border: 1px solid #fff; border-radius: 20px;">
+                        </div> -->
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h2 class="offcanvas-title" id="offcanvasRightLabel">Tickets Booking Details</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <!-- <div class="row">
+                                    <div class="passenger-details">
+                                        <div class="row">                                    
+                                            <div class="col-lg-12">
+                                                <h5>Persons Details</h5>
+                                                <p>
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <table class="table">
+                                                            <thead>
+                                                              <tr>
+                                                                <th scope="col">No</th>
+                                                                <th scope="col">Name</th>
+                                                                <th scope="col">Age</th>
+                                                                <th scope="col">Sex</th>
+                                                              </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                              <tr>
+                                                                <th scope="row">1</th>
+                                                                <td>Meet Nayak</td>
+                                                                <td>24</td>
+                                                                <td>Male</td>
+                                                              </tr>
+                                                              <tr>
+                                                                <th scope="row">2</th>
+                                                                <td>Tanvi Nayak</td>
+                                                                <td>27</td>
+                                                                <td>Female</td>
+                                                              </tr>
+                                                              <tr>
+                                                                <th scope="row">3</th>
+                                                                <td>Zinal Patel</td>
+                                                                <td>23</td>
+                                                                <td>Female</td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                    </div>
+                                                    
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- <div class="row">                                    
+                                    <div class="col-lg-12">
+                                        <h5>Tickets</h5>
+                                        <p>
                                         <div class="row">
-                                            <div class="col-lg-3 p-4">
-                                                <img src="img/online-ticket.gif" alt="" class="img-fluid" srcset="">
+                                            <div class="col-lg-12">
+                                                <table class="table text-center">
+                                                    <thead>
+                                                      <tr>
+                                                        <th scope="col">No</th>
+                                                        <th scope="col">Ticket Name</th>
+                                                        <th scope="col">Selected Time Slot</th>
+                                                        <th scope="col">Operating Hours</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Jungle Safari</td>
+                                                        <td>10:30AM to 11:30AM</td>
+                                                        <td>8:00Am to 6:00PM</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>SOU Express Entry</td>
+                                                        <td>-</td>
+                                                        <td>8:00Am to 6:00PM</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>Vishwa Van</td>
+                                                        <td>3:00PM to 4:00PMN</td>
+                                                        <td>8:00Am to 6:00PM</td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
                                             </div>
-                                            <div class="col-lg-9 py-5">
-                                                <h5>Looks empty, you've no upcoming bookings.</h5>
-                                                <p>When you book a trip, you will see your itinerary here.</p>
+                                            
+                                        </div>
+                                </div> -->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h5>Tickets Details</h5>
+                                        <p>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <table class="table text-center">
+                                                    <thead>
+                                                        <tr style="color: #f4984a;">
+                                                            <th scope="col">No</th>
+                                                            <th scope="col">Ticket Name</th>
+                                                            <th scope="col">Visitor No</th>
+                                                            <th scope="col">Adult</th>
+                                                            <th scope="col">Chaild</th>
+                                                            <th scope="col">Time Slot</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr style="color: #003A66;">
+                                                            <th scope="row">1</th>
+                                                            <td>Jungle Safari</td>
+                                                            <td>5</td>
+                                                            <td>3</td>
+                                                            <td>2</td>
+                                                            <td>10:30AM to 11:30AM</td>
+                                                        </tr>
+                                                        <tr style="color: #003A66;">
+                                                            <th scope="row">2</th>
+                                                            <td>SOU Express Entry</td>
+                                                            <td>5</td>
+                                                            <td>3</td>
+                                                            <td>2</td>
+                                                            <td>8:00AM to 6:00PM</td>
+                                                        </tr>
+                                                        <tr style="color: #003A66;">
+                                                            <th scope="row">3</th>
+                                                            <td>Vishwa Van</td>
+                                                            <td>5</td>
+                                                            <td>3</td>
+                                                            <td>2</td>
+                                                            <td>3:30AM to 4:30AM</td>
+                                                        </tr>
+                                                        <tr style="color: #003A66;">
+                                                            <th scope="row">4</th>
+                                                            <td>Butterfly Garden</td>
+                                                            <td>5</td>
+                                                            <td>3</td>
+                                                            <td>2</td>
+                                                            <td>4:30AM to 5:00AM</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <h5>Person Details</h5>
+                                            <p>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="person-details">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <table class="table text-center">
+                                                                    <thead>
+                                                                        <tr style="color: #f4984a;">
+                                                                            <th scope="col">No</th>
+                                                                            <th scope="col">Person Name</th>
+                                                                            <th scope="col">Age</th>
+                                                                            <th scope="col">Gender</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr style="color: #003A66;">
+                                                                            <th scope="row">1</th>
+                                                                            <td>Meet Nayak</td>
+                                                                            <td>24</td>
+                                                                            <td>Male</td>
+                                                                        </tr>
+                                                                        <tr style="color: #003A66;">
+                                                                            <th scope="row">2</th>
+                                                                            <td>Yogita Nayak</td>
+                                                                            <td>52</td>
+                                                                            <td>Female</td>
+                                                                        </tr>
+                                                                        <tr style="color: #003A66;">
+                                                                            <th scope="row">3</th>
+                                                                            <td>Zinal Nayak</td>
+                                                                            <td>24</td>
+                                                                            <td>Female</td>
+                                                                        </tr>
+                                                                        <tr style="color: #003A66;">
+                                                                            <th scope="row">4</th>
+                                                                            <td>Angad Nayak</td>
+                                                                            <td>14</td>
+                                                                            <td>Male</td>
+                                                                        </tr>
+                                                                        <tr style="color: #003A66;">
+                                                                            <th scope="row">5</th>
+                                                                            <td>Rooh Nayak</td>
+                                                                            <td>4</td>
+                                                                            <td>Female</td>
+                                                                        </tr>
+
+
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
-                            </div>
-                        </section>
-                        <section id="content3">
-                            <div class="container p-0">
-                                <div class="booking-bag p-0">
-                                    <div class="card" style="box-shadow: 0 0 30px rgba(0, 0, 0, .2); border: 1px solid #fff; border-radius: 20px;">
-                                        <div class="row">
-                                            <div class="col-lg-3 p-4">
-                                                <img src="img/task.gif" alt="" class="img-fluid" srcset="">
-                                            </div>
-                                            <div class="col-lg-9 py-5">
-                                                <h5>Looks empty, you've no upcoming bookings.</h5>
-                                                <p>When you book a trip, you will see your itinerary here.</p>
+
+                                <!-- Model end -->
+                                <section id="content2">
+                                    <div class="container p-0">
+                                        <div class="booking-bag p-0">
+                                            <div class="card"
+                                                style="box-shadow: 0 0 30px rgba(0, 0, 0, .2); border: 1px solid #fff; border-radius: 20px;">
+                                                <div class="row">
+                                                    <div class="col-lg-3 p-4">
+                                                        <img src="img/online-ticket.gif" alt="" class="img-fluid"
+                                                            srcset="">
+                                                    </div>
+                                                    <div class="col-lg-9 py-5">
+                                                        <h5>Looks empty, you've no upcoming bookings.</h5>
+                                                        <p>When you book a trip, you will see your itinerary here.</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-
-                                </div>
-                            </div>
-                        </section>
+                                </section>
+                                <section id="content3">
+                                    <div class="container p-0">
+                                        <div class="booking-bag p-0">
+                                            <div class="card"
+                                                style="box-shadow: 0 0 30px rgba(0, 0, 0, .2); border: 1px solid #fff; border-radius: 20px;">
+                                                <div class="row">
+                                                    <div class="col-lg-3 p-4">
+                                                        <img src="img/task.gif" alt="" class="img-fluid" srcset="">
+                                                    </div>
+                                                    <div class="col-lg-9 py-5">
+                                                        <h5>Looks empty, you've no upcoming bookings.</h5>
+                                                        <p>When you book a trip, you will see your itinerary here.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
                     </main>
                 </div>
             </div>
@@ -369,8 +759,6 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
@@ -385,10 +773,6 @@
         loginBtn.addEventListener('click', () => {
             container.classList.remove('active');
         })
-
-
-
-
     </script>
 </body>
 

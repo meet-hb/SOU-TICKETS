@@ -6906,7 +6906,7 @@ fieldset:disabled .btn {
 .offcanvas-end {
     top: 0;
     right: 0;
-    width: 400px;
+    width: 900px;
     border-left: 1px solid rgba(0, 0, 0, .2);
     transform: translateX(100%)
 }

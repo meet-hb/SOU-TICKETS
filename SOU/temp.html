@@ -1,283 +1,360 @@
-<div class="form-box register">
+<!doctype html>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.56, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <title>FYMNY Pass</title>
+    <style>
+        @page {
+            size: A4 landscape;
+            margin: 0;
+        }
 
-    <form action="#">
-        <h1>Registration</h1>
-        <div class="row">
-            <div class="redio d-flex mt-3 text-center">
-                <input type="radio" id="tab1" name="tab" checked>
-                <label for="tab1">Visitor</label>
-                <input type="radio" id="tab2" name="tab">
-                <label for="tab2">Merchant</label>
-                <input type="radio" id="tab3" name="tab">
-                <label for="tab3">SOU User</label>
-            </div>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Open Sans';
+        }
 
-            <article>
-                <h2>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="input-box">
-                                <input type="text" placeholder="Username" required>
-                                <i class='bx bxs-user'></i>
+        .pdf-all-saction {
+            padding: 10mm;
+            box-sizing: border-box;
+        }
+
+        .pdf-all-saction table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        iframe {
+            width: 100%;
+            height: 150mm;
+            border: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .banner img {
+            width: 100%;
+        }
+
+        p,
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer {
+            padding: 10px;
+            background-color: #f7f8f8;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+
+        .short-logo img {
+            max-width: 100px;
+        }
+
+        .footer-text {
+            margin-top: 5px;
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: top;
+            width: calc(100% - 120px);
+        }
+
+        .order-nbr {
+            background-color: #f7f8f8;
+            text-align: center;
+            color: #000;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        .addres-box {
+            background-color: #f7f8f8;
+            padding: 10px;
+            margin: 5px 0 0 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .qr-code {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .important-notification {
+            font-size: 16px;
+            font-weight: 800;
+            margin: 0;
+            color: #000;
+        }
+
+        .banner img {
+            height: 30%;
+            width: auto;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        ul li {
+            font-size: 10px;
+            line-height: 1.4;
+        }
+
+        table.srt th {
+            position: relative;
+        }
+
+        table.srt th button {
+            width: 100%;
+            display: inline;
+            cursor: pointer;
+        }
+
+        table.srt th button span {
+            width: 100%;
+            padding: 1rem;
+            position: absolute;
+        }
+
+        table.srt tbody tr:nth-child(odd) {
+            /* background: gainsboro; */
+            color: black;
+        }
+
+        .cat_square {
+            width: 100px;
+        }
+        tr{
+            text-align: justify;
+            border: 1px solid #f4984a;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- @foreach ($tickets as $ticket) -->
+    <div class="pdf-all-saction">
+        <table>
+            <tbody>
+                <tr>
+                    <td style="width: 50%;">
+                        <div class="logo"><img src="sou2.png" alt="#" height="50px" width="150px"></div>
+                    </td>
+                    <td style="width: 100%;">
+                        <h2 style="text-align: right; font-weight: 800;">THIS IS YOUR TICKET</h2>
+                        <p style="text-align: right;">Present this entire page at the event</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="banner"><img src="img/about1.jpeg" alt="#">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#"
+                            style="border: 2px solid #000; border-radius: 4px; color: #000; font-size: 16px; font-weight: 600; text-decoration: none; text-align: center; display: block; padding: 10px; margin: 10px 0;">General
+                            Admission</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li><b>Pricing: </b>Tickets are $10.00 online and $20.00 at the door.</li>
+                            <li><b>Entry Time: </b>Venue entry begins 30 minutes before Garba starts.</li>
+                            <li><b>No Refunds or Exchanges: </b>All ticket sales are final; no refunds or exchanges
+                                will be
+                                provided.</li>
+                            <li><b>QR Code: </b>Each attendee will receive a unique QR code for entry. Losing your
+                                QR code will be
+                                considered as not attending the FYMNY Navratri Garba Utsav.</li>
+                            <li><b>Single Entry: </b>Tickets are valid for a single entry only.</li>
+                            <li><b>Free Admission: </b>Children aged 10 years or under enter free of charge.</li>
+                            <li><b>Same-Day Use Only: </b>Tickets are only valid for the date of the event.</li>
+                            <li><b>Hall (Temple) Rules: </b>No smoking or alcohol is allowed inside the hall
+                                (temple)
+                                .</li>
+                            <li><b>Personal Belongings: </b>Loss of any personal belongings is not the
+                                responsibility of the
+                                management.</li>
+                            <li><b>Wristband Requirement: </b>Entry without a wristband is not permitted.</li>
+                            <li><b>Re-Entry Policy: </b>To re-enter, you must have a hand stamp.</li>
+                            <li><b>Prohibited Items: </b>Carrying of liquids, alcohol, cigarettes, matchboxes,
+                                lighters,
+                                e-cigarettes, vapes, and banned substances including food will not be permitted.
+                                Dangerous or
+                                potentially hazardous objects, including but not limited to weapons, knives, guns,
+                                fireworks,
+                                helmets, and laser devices, will not be allowed in the venue and may result in
+                                ejection with or
+                                without the owner.</li>
+                            <li><b>All Rights Reserved: </b>Flushing Yuva Mandal New York (FYMNY).</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="srt">
+            <caption>
+                <h3>Tickets Details</h3>
+            </caption>
+            <thead>
+                <tr style="text-align: center;">
+                    
+                    <th aria-sort="ascending">
+                        Tickets Name<span aria-hidden="true"></span>
+                    </th>
+                    <th aria-sort="ascending">
+                        Adult<span aria-hidden="true"></span>
+                    </th>
+                    <th aria-sort="ascending">
+                        Child<span aria-hidden="true"></span>
+                    </th>
+                    <th aria-sort="ascending">
+                        Time Slot<span aria-hidden="true"></span>
+                    </th>
+                    <th class="num">
+                        Price<span aria-hidden="true"></span>
+                    </th>
+                    <th class="no-sort">QR</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="text-align: center;">
+                    <td>Jungle Safari</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>10:00AM to 11:30PM</td>
+                    <td class="num">₹1250 /-</td>
+                    <td>
+                        <img src="img/qr.png"
+                            alt="" class="cat_square" />
+                    </td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td>Jungle Safari</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>10:00AM to 11:30PM</td>
+                    <td class="num">₹1250 /-</td>
+                    <td>
+                        <img src="img/qr.png"
+                            alt="" class="cat_square" />
+                    </td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td>Jungle Safari</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>10:00AM to 11:30PM</td>
+                    <td class="num">₹1250 /-</td>
+                    <td>
+                        <img src="img/qr.png"
+                            alt="" class="cat_square" />
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <!-- <table>
+            <tbody>
+                <tr>
+                    <td style="width: 50%;">
+                        <div class="short-logo"><img src="img/short-logo.png" alt="Short Logo"></div>
+                    </td>
+                    <td style="width: 50%;">
+                        <div class="footer">
+                            <div class="footer-text">
+                                <p>�� 2022 Flushing Yuva Mandal New York</p>
+                                <p>123 Main St, Flushing, NY 11354</p>
+                                <p>Phone: (123) 456-7890</p>
+                                <p>Email: <a href="mailto:info@fymny.com">info@fymny.com</a></p>
                             </div>
-                            <div class="input-box mb-1">
-                                <input type="number" placeholder="+91" required>
-                                <i class='bx bxs-phone'></i>
-                            </div>
-                            <div class="input-box">
-                                <input type="password" placeholder="Password" required>
-                                <i class='bx bxs-low-vision'></i>
-                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td style="width: 50%; vertical-align: top; padding-right: 5mm;">
+                        <div class="qr-code">
+                            <img src="img/qr.png" alt="QR Code">
+                        </div>
+                    </td>
+                    <td style="width: 50%; vertical-align: top; padding-left: 5mm; margin-top: 5mm;">
+                        <div class="order-nbr">Ticket No: 85668845</div>
+                        <div class="addres-box">
+                            <ul style="font-size: 14px;">
+                                <li style="font-size: 14px;"><strong>EVENT:</strong>
+                                    <span>{{ $ticket['event']['name'] }}</span>
+                                </li>
+                                <li style="font-size: 14px;"><strong>DATE:</strong> <span>
+                                        {{ $ticket['event']['date'] }}</span>
+                                </li style="font-size: 14px;">
+                                <li style="font-size: 14px;"><strong>VENUE: </strong>
+                                    <span>{{ $ticket['event']['venue'] }}</span>
+                                </li>
+                                <li style="font-size: 14px;"><strong>AGE: </strong> <span>All Ages</span></li>
+                                <li style="font-size: 14px;"><strong>PURCHASER: </strong>
+                                    <span>{{ $ticket['event']['username'] }}</span>
+                                </li>
+                                <li style="font-size: 14px;"><strong>PRICE: </strong>
+                                    <span>${{ $ticket['event']['amount'] }}</span>
+                                </li>
+                                {{-- <li><strong>TICKET TYPE: </strong> <span>General Admission</span></li> --}}
+                            </ul>
+                        </div>
+                        <p class="important-notification">IMPORTANT NOTIFICATION</p>
+                        <p style="font-size: 12px;">. This QRCode is valid for only one admission</p>
+                        <p style="font-size: 12px;">. Unauthorized duplication may result in denial of admission</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table> -->
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="short-logo">
+                            <img src="sou2.png" alt="Logo">
+                        </div>
+                    </td>
+                    <td>
+                        <div style=" background-color: #f7f8f8; padding: 10px;">
+                            <strong>Organize Events?</strong>
+                            <span>Discover more at or contact us <a href="https://fymny.org/contact-us"
+                                    style="color:#ef3f7b; text-decoration:none;">https://fymny.org/contact-us</a> or
+                                contact
+                                us <a href="mailto:info@fymny.org"
+                                    style="color:#ef3f7b; text-decoration:none;">info@fymny.org</a></span>
 
                         </div>
-                        <div class="col-lg-6">
-                            <div class="input-box">
-                                <input type="text" placeholder="Full Name" required>
-                                <i class='bx bxs-user'></i>
-                            </div>
-                            <div class="input-box">
-                                <input type="email" placeholder="Email" required>
-                                <i class='bx bxs-envelope'></i>
-                            </div>
-                            <div class="input-box">
-                                <input type="password" placeholder="Confrim Password" required>
-                                <i class='bx bxs-low-vision'></i>
-                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
+</body>
 
-
-
-                        </div>
-
-                    </div>
-
-                </h2>
-            </article>
-            <article style="overflow: auto; height: 350px;" class="scrollbar" id="style-3">
-                <h2>
-
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="input-box mb-1">
-                                <input type="text" placeholder="Business Name" required>
-                                <i class='bx bxs-business'></i>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="input-box mb-1">
-                                <select class="input" aria-label="Default select example">
-                                    <option selected>Type of Business</option>
-                                    <option value="1">proprietor</option>
-                                    <option value="2">Partnership</option>
-                                    <option value="3">Individual</option>
-                                </select>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="input-box mb-1 ">
-                                <input type="number" placeholder="Enter Primary Number" required>
-                                <i class='bx bxs-phone'></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="input-box mb-1 ">
-                                <input type="email" placeholder="Enter Email Id" required>
-                                <i class='bx bxs-envelope'></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="input-box mb-1">
-                                <div class="input-box mb-1 ">
-                                    <input type="text" placeholder="Business Full Address" required>
-                                    <i class='bx bxs-map'></i>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="input-box mb-1 ">
-                                <input type="text" placeholder="User Name" required>
-                                <i class='bx bxs-user'></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="input-box mb-1 ">
-                                <input type="number" placeholder="Owner Phone" required>
-                                <i class='bx bxs-phone'></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="input-box mb-1 ">
-                                <input type="password" placeholder="Enter Password" required>
-                                <i class='bx bxs-low-vision'></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="input-box mb-1 ">
-                                <input type="password" placeholder="Confrim Password" required>
-                                <i class='bx bxs-low-vision'></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-
-                            <div class="input-box mb-1 ">
-                                <input type="number" placeholder="GST No" required>
-                                <!-- <i class='bx bxs-map' ></i> -->
-                            </div>
-
-
-                        </div>
-                        <div class="col-lg-6">
-
-                            <div class="input-box mb-1 ">
-                                <input type="number" placeholder="Business Reg No" required>
-                                <!-- <i class='bx bxs-map' ></i> -->
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-                        <h5 class="m-0">Bank Account Details</h5>
-                        <div class="col-lg-12">
-
-                            <div class="input-box mb-1">
-                                <input type="text" placeholder="Bank Name" required>
-                                <i class='bx bxs-bank'></i>
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-
-                            <div class="input-box mb-1 ">
-                                <input type="number" placeholder="IFSC Code" required>
-                                <!-- <i class='bx bxs-map' ></i> -->
-                            </div>
-
-
-                        </div>
-                        <div class="col-lg-6">
-
-                            <div class="input-box mb-1 ">
-                                <input type="number" placeholder="Bank Account No" required>
-                                <!-- <i class='bx bxs-map' ></i> -->
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-
-                            <div class="input-box mb-1 ">
-                                <input type="text" placeholder="Bank Address" required>
-                                <i class='bx bxs-map'></i>
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <h5 class="m-0">Document Upload</h5>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="input-box mb-1 text-start">
-                                <label for="formFile" class="form-label">Upload GST Certificate</label>
-                                <input class="form-control" type="file" id="formFile">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="input-box mb-1 text-start">
-                                <label for="formFile" class="form-label">Upload Owner Id Proof<span>
-                                        (utility Bill)</span></label>
-                                <input class="form-control" type="file" id="formFile">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="form-check text-start">
-                                <input class="form-check-input" type="checkbox" value=""
-                                    id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Merchant Agreement <span><a href="#">Tearms & Conditions</a></span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="form-check text-start">
-                                <input class="form-check-input" type="checkbox" value=""
-                                    id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    <span><a href="#">Privacy Policy</a> Agreement</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="avatar-upload">
-                                <div class="avatar-edit">
-                                    <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-                                    <label for="imageUpload"><i class='bx bxs-edit mt-2'></i></label>
-                                </div>
-                                <div class="avatar-preview">
-                                    <div id="imagePreview"
-                                        style="background-image: url('http://i.pravatar.cc/500?img=7');">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </h2>
-            </article>
-            <article>
-                <h2>article3</h2>
-            </article>
-
-        </div>
-
-        <button type="submit" class="btn-log" data-bs-target="#exampleModalToggle2"
-            data-bs-toggle="modal">Register</button>
-        <p>or register with social platforms</p>
-        <div class="social-icons">
-            <a href="#"><i class='bx bxl-google'></i></a>
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-        </div>
-    </form>
-
-
-
-
-</div>
-
+</html>
