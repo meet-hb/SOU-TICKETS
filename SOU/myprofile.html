@@ -247,7 +247,8 @@
                                                     <button type="button" class="btn btn-primary btn-secondry"
                                                         data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
                                                         style="border: none;"><i class="fas fa-pencil-alt"></i><span
-                                                            class="mx-2">Edit</span></button>
+                                                            class="mx-2">Edit</span>
+                                                    </button>
                                                 </div>
                                             </div>
                                             <div class="personal-info ">
@@ -299,7 +300,6 @@
                                                                 <input type="text" readonly
                                                                     class="form-control-plaintext" id="staticUsername"
                                                                     value="7041867446">
-
                                                             </div>
                                                         </div>
                                                     </div>
@@ -312,18 +312,16 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
-
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- Model Start 1  -->
-                        <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="exampleModalToggle" aria-hidden="true"
-                            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false"
+                            id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                            tabindex="-1">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -570,8 +568,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="exampleModalToggle10" aria-hidden="true"
-                            aria-labelledby="exampleModalToggleLabel10" tabindex="1">
+                        <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false"
+                            id="exampleModalToggle10" aria-hidden="true" aria-labelledby="exampleModalToggleLabel10"
+                            tabindex="1">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -613,76 +612,78 @@
                         </div>
                         <!-- Model 4 End -->
                         <!-- Model 5 Start -->
-                        <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="exampleModalToggle11" aria-hidden="true"
-                        aria-labelledby="exampleModalToggleLabel11" tabindex="-1">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel11">Change Password
-                                    </h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <form class="form-floating">
-                                        <input type="password" class="form-control" id="floatingInputValue"
-                                            placeholder="Enter Old Password" value="">
-                                        <label for="floatingInputValue">Enter Old Password</label>
-                                    </form>
-                                    <form class="form-floating mt-2">
-                                        <input type="email" class="form-control" id="floatingInputValue"
-                                            placeholder="Enter New Password" value="">
-                                        <label for="floatingInputValue">Enter New Password</label>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-primary border-0" data-bs-target="#exampleModalToggle12"
-                                        data-bs-toggle="modal">Change</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="exampleModalToggle12" aria-hidden="true"
-                        aria-labelledby="exampleModalToggleLabel12" tabindex="1">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel12">OTP Verify</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="container">
-                                        <p>Enter the OTP you received to <span id="email">Info@gmail.com</span></p>
-                                        <div class="otp-input">
-                                            <input type="number" min="0" max="9" required>
-                                            <input type="number" min="0" max="9" required>
-                                            <input type="number" min="0" max="9" required>
-                                            <input type="number" min="0" max="9" required>
-                                        </div>
-                                        <p>Enter the OTP you received Phone <span id="phone">7041867446</span></p>
-                                      <div class="otp-input">
-                                          <input type="number" min="0" max="9" required>
-                                          <input type="number" min="0" max="9" required>
-                                          <input type="number" min="0" max="9" required>
-                                          <input type="number" min="0" max="9" required>
-                                      </div>
-                                        <button onclick="verifyOTP()" class="btn-log">Verify</button>
-                                        <div class="resend-text">
-                                            Didn't receive the code?
-                                            <span class="resend-link" onclick="resendOTP()">Resend Code</span>
-                                            <span id="timer"></span>
-                                        </div>
+                        <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false"
+                            id="exampleModalToggle11" aria-hidden="true" aria-labelledby="exampleModalToggleLabel11"
+                            tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel11">Change Password
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="form-floating">
+                                            <input type="password" class="form-control" id="floatingInputValue"
+                                                placeholder="Enter Old Password" value="">
+                                            <label for="floatingInputValue">Enter Old Password</label>
+                                        </form>
+                                        <form class="form-floating mt-2">
+                                            <input type="email" class="form-control" id="floatingInputValue"
+                                                placeholder="Enter New Password" value="">
+                                            <label for="floatingInputValue">Enter New Password</label>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary border-0" data-bs-target="#exampleModalToggle12"
+                                            data-bs-toggle="modal">Change</button>
                                     </div>
                                 </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-primary btn-secondry border-0"
-                                        data-bs-target="#exampleModalToggle11" data-bs-toggle="modal"
-                                        data-bs-dismiss="modal">Done</button>
+                            </div>
+                        </div>
+                        <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false"
+                            id="exampleModalToggle12" aria-hidden="true" aria-labelledby="exampleModalToggleLabel12"
+                            tabindex="1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel12">OTP Verify</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <p>Enter the OTP you received to <span id="email">Info@gmail.com</span></p>
+                                            <div class="otp-input">
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                            </div>
+                                            <p>Enter the OTP you received Phone <span id="phone">7041867446</span></p>
+                                            <div class="otp-input">
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                            </div>
+                                            <button onclick="verifyOTP()" class="btn-log">Verify</button>
+                                            <div class="resend-text">
+                                                Didn't receive the code?
+                                                <span class="resend-link" onclick="resendOTP()">Resend Code</span>
+                                                <span id="timer"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary btn-secondry border-0"
+                                            data-bs-target="#exampleModalToggle11" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal">Done</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                         <!-- Model 5 End -->
 
                         <!-- Model End -->
@@ -802,10 +803,10 @@
                             </div>
                         </div>
 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
