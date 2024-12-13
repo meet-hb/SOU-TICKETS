@@ -51,6 +51,8 @@
     .form-control-plaintext {
         color: #003A66;
         font-weight: 800;
+        padding: 0px !important;
+        width: auto !important;
     }
 
     #change-image-button {
@@ -176,8 +178,7 @@
                     class="btn btn-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0">Login</a>
 
                 <div class="nav-item dropdown">
-                    <button
-                        class="btn btn-primary border-secondary  py-2  mb-3 mb-md-3 mb-lg-0 mx-2 dropdown-toggle"
+                    <button class="btn btn-primary border-secondary  py-2  mb-3 mb-md-3 mb-lg-0 mx-2 dropdown-toggle"
                         type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 50px;">
                         <i class="far fa-user"></i>
                     </button>
@@ -228,10 +229,11 @@
                     </div>
                 </div>
                 <div class="col-9">
-                    <div data-bs-spy="scroll" class="scrollbar" id="style-2" data-bs-target="#navbar-example3"
+                    < data-bs-spy="scroll" class="scrollbar" id="style-2" data-bs-target="#navbar-example3"
                         data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0"
                         style="overflow: visible; height:900px; border-radius: 20px;">
-                        <div class="card" style="box-shadow: 0 0 30px rgba(0, 0, 0, .2); border: 1px solid #fff; border-radius: 20px;">
+                        <div class="card"
+                            style="box-shadow: 0 0 30px rgba(0, 0, 0, .2); border: 1px solid #fff; border-radius: 20px;">
                             <div id="item-1 p-2">
                                 <div class="container p-2">
                                     <div class="card" style="border: none;">
@@ -243,6 +245,7 @@
                                                 </div>
                                                 <div class="col-lg-6 text-end">
                                                     <button type="button" class="btn btn-primary btn-secondry"
+                                                        data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
                                                         style="border: none;"><i class="fas fa-pencil-alt"></i><span
                                                             class="mx-2">Edit</span></button>
                                                 </div>
@@ -252,42 +255,51 @@
                                                     <div class="col-lg-10 p-0">
                                                         <div class="mb-2 row px-2">
                                                             <label for="staticUsername"
-                                                                class="col-sm-4 col-form-label User-Name">User Name:</label>
+                                                                class="col-sm-4 col-form-label User-Name">User
+                                                                Name:</label>
                                                             <div class="col-sm-8">
-                                                                <input type="text" readonly class="form-control-plaintext"
-                                                                    id="staticUsername" value="Meet2564">
+                                                                <input type="text" readonly
+                                                                    class="form-control-plaintext" id="staticUsername"
+                                                                    value="Meet2564">
                                                             </div>
                                                         </div>
                                                         <div class="mb-2 row px-2">
                                                             <label for="staticUsername"
-                                                                class="col-sm-4 col-form-label User-Name">User Type:</label>
+                                                                class="col-sm-4 col-form-label User-Name">User
+                                                                Type:</label>
                                                             <div class="col-sm-8">
-                                                                <input type="text" readonly class="form-control-plaintext"
-                                                                    id="staticUsername" value="General Visitor">
+                                                                <input type="text" readonly
+                                                                    class="form-control-plaintext" id="staticUsername"
+                                                                    value="General Visitor">
                                                             </div>
                                                         </div>
                                                         <div class="mb-2 row px-2">
                                                             <label for="staticUsername"
-                                                                class="col-sm-4 col-form-label User-Name">Full Name:</label>
+                                                                class="col-sm-4 col-form-label User-Name">Full
+                                                                Name:</label>
                                                             <div class="col-sm-8">
-                                                                <input type="text" readonly class="form-control-plaintext"
-                                                                    id="staticUsername" value="Nayak Meetkumar R">
+                                                                <input type="text" readonly
+                                                                    class="form-control-plaintext" id="staticUsername"
+                                                                    value="Nayak Meetkumar R">
                                                             </div>
                                                         </div>
                                                         <div class="mb-2 row px-2">
                                                             <label for="staticUsername"
                                                                 class="col-sm-4 col-form-label User-Name">Email:</label>
                                                             <div class="col-sm-8">
-                                                                <input type="text" readonly class="form-control-plaintext"
-                                                                    id="staticUsername" value="example@gmail.com">
+                                                                <input type="text" readonly
+                                                                    class="form-control-plaintext" id="staticUsername"
+                                                                    value="example@gmail.com">
                                                             </div>
                                                         </div>
                                                         <div class="mb-2 row px-2">
                                                             <label for="staticUsername"
                                                                 class="col-sm-4 col-form-label User-Name">Mobile:</label>
                                                             <div class="col-sm-8">
-                                                                <input type="text" readonly class="form-control-plaintext"
-                                                                    id="staticUsername" value="7041867446">
+                                                                <input type="text" readonly
+                                                                    class="form-control-plaintext" id="staticUsername"
+                                                                    value="7041867446">
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -300,94 +312,501 @@
                                                         </div>
                                                     </div>
                                                 </div>
-    
-    
+
+
                                             </div>
                                         </div>
-    
+
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card mt-2" style="box-shadow: 0 0 30px rgba(0, 0, 0, .2); border: 1px solid #fff; border-radius: 20px;">
+                        <!-- Model Start 1  -->
+                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Edit Profile</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="form-floating">
+                                            <input type="email" class="form-control" id="floatingInputValue"
+                                                placeholder="Enter New Username" value="">
+                                            <label for="floatingInputValue">Enter New Username</label>
+                                        </form>
+                                        <form class="form-floating mt-2">
+                                            <input type="email" class="form-control" id="floatingInputValue"
+                                                placeholder="Enter New Name" value="">
+                                            <label for="floatingInputValue">Enter New Name</label>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary border-0" data-bs-target="#exampleModalToggle2"
+                                            data-bs-toggle="modal">Change</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">OTP Verify</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <p>Enter the OTP you received to <span id="email">Info@gmail.com</span></p>
+                                            <div class="otp-input">
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                            </div>
+                                            <p>Enter the OTP you received Phone <span id="phone">7041867446</span></p>
+                                            <div class="otp-input">
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                            </div>
+                                            <button onclick="verifyOTP()" class="btn-log">Verify</button>
+                                            <div class="resend-text">
+                                                Didn't receive the code?
+                                                <span class="resend-link" onclick="resendOTP()">Resend Code</span>
+                                                <span id="timer"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary btn-secondry border-0"
+                                            data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal">Done</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Model 1 end -->
+                        <!-- Model 2 start -->
+                        <div class="modal fade" id="exampleModalToggle5" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel5" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel5">Edit Login Details
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="form-floating">
+                                            <input type="email" class="form-control" id="floatingInputValue"
+                                                placeholder="Enter New Email" value="">
+                                            <label for="floatingInputValue">Enter New Email</label>
+                                        </form>
+                                        <form class="form-floating mt-2">
+                                            <input type="email" class="form-control" id="floatingInputValue"
+                                                placeholder="Enter New Number" value="">
+                                            <label for="floatingInputValue">Enter New Phone Number</label>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary border-0" data-bs-target="#exampleModalToggle3"
+                                            data-bs-toggle="modal">Change</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="exampleModalToggle3" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel3" tabindex="1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel3">OTP Verify</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <p>Enter the OTP you received to <span id="email">Info@gmail.com</span></p>
+                                            <div class="otp-input">
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                            </div>
+                                            <p>Enter the OTP you received Phone <span id="phone">7041867446</span></p>
+                                            <div class="otp-input">
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                            </div>
+                                            <button onclick="verifyOTP()" class="btn-log">Verify</button>
+                                            <div class="resend-text">
+                                                Didn't receive the code?
+                                                <span class="resend-link" onclick="resendOTP()">Resend Code</span>
+                                                <span id="timer"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary btn-secondry border-0"
+                                            data-bs-target="#exampleModalToggle5" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal">Done</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Model 2 End -->
+
+
+                        <!-- Model 3 Start -->
+                        <div class="modal fade" id="exampleModalToggle7" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel7" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel7">Edit Phone Number
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="form-floating">
+                                            <input type="number" class="form-control" id="floatingInputValue"
+                                                placeholder="Enter Old Number" value="">
+                                            <label for="floatingInputValue">Enter Old Number</label>
+                                        </form>
+                                        <form class="form-floating mt-2">
+                                            <input type="number" class="form-control" id="floatingInputValue"
+                                                placeholder="Enter New Number" value="">
+                                            <label for="floatingInputValue">Enter New Phone Number</label>
+                                        </form>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary border-0" data-bs-target="#exampleModalToggle8"
+                                            data-bs-toggle="modal">Change</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="exampleModalToggle8" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel8" tabindex="1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel8">OTP Verify</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <!-- <p>Enter the OTP you received to <span id="email">Info@gmail.com</span></p>
+                                        <div class="otp-input">
+                                            <input type="number" min="0" max="9" required>
+                                            <input type="number" min="0" max="9" required>
+                                            <input type="number" min="0" max="9" required>
+                                            <input type="number" min="0" max="9" required>
+                                        </div> -->
+                                            <p>Enter the OTP you received Phone <span id="phone">7041867446</span></p>
+                                            <div class="otp-input">
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                            </div>
+                                            <button onclick="verifyOTP()" class="btn-log">Verify</button>
+                                            <div class="resend-text">
+                                                Didn't receive the code?
+                                                <span class="resend-link" onclick="resendOTP()">Resend Code</span>
+                                                <span id="timer"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary btn-secondry border-0"
+                                            data-bs-target="#exampleModalToggle7" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal">Done</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Model 3 End -->
+                        <!-- Model 4 Start -->
+                        <div class="modal fade" id="exampleModalToggle9" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel9" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel9">Edit Phone Number
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="form-floating">
+                                            <input type="email" class="form-control" id="floatingInputValue"
+                                                placeholder="Enter Old Email" value="">
+                                            <label for="floatingInputValue">Enter Old Email</label>
+                                        </form>
+                                        <form class="form-floating mt-2">
+                                            <input type="email" class="form-control" id="floatingInputValue"
+                                                placeholder="Enter New Email" value="">
+                                            <label for="floatingInputValue">Enter New Email</label>
+                                        </form>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary border-0" data-bs-target="#exampleModalToggle10"
+                                            data-bs-toggle="modal">Change</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="exampleModalToggle10" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel10" tabindex="1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel10">OTP Verify</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <p>Enter the OTP you received to <span id="email">Info@gmail.com</span></p>
+                                            <div class="otp-input">
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                                <input type="number" min="0" max="9" required>
+                                            </div>
+                                            <!-- <p>Enter the OTP you received Phone <span id="phone">7041867446</span></p>
+                                          <div class="otp-input">
+                                              <input type="number" min="0" max="9" required>
+                                              <input type="number" min="0" max="9" required>
+                                              <input type="number" min="0" max="9" required>
+                                              <input type="number" min="0" max="9" required>
+                                          </div> -->
+                                            <button onclick="verifyOTP()" class="btn-log">Verify</button>
+                                            <div class="resend-text">
+                                                Didn't receive the code?
+                                                <span class="resend-link" onclick="resendOTP()">Resend Code</span>
+                                                <span id="timer"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary btn-secondry border-0"
+                                            data-bs-target="#exampleModalToggle9" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal">Done</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Model 4 End -->
+                        <!-- Model 5 Start -->
+                        <div class="modal fade" id="exampleModalToggle11" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel11" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel11">Edit Phone Number
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="form-floating">
+                                        <input type="password" class="form-control" id="floatingInputValue"
+                                            placeholder="Enter Old Password" value="">
+                                        <label for="floatingInputValue">Enter Old Password</label>
+                                    </form>
+                                    <form class="form-floating mt-2">
+                                        <input type="email" class="form-control" id="floatingInputValue"
+                                            placeholder="Enter New Password" value="">
+                                        <label for="floatingInputValue">Enter New Password</label>
+                                    </form>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary border-0" data-bs-target="#exampleModalToggle12"
+                                        data-bs-toggle="modal">Change</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle12" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel12" tabindex="1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel12">OTP Verify</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <p>Enter the OTP you received to <span id="email">Info@gmail.com</span></p>
+                                        <div class="otp-input">
+                                            <input type="number" min="0" max="9" required>
+                                            <input type="number" min="0" max="9" required>
+                                            <input type="number" min="0" max="9" required>
+                                            <input type="number" min="0" max="9" required>
+                                        </div>
+                                        <p>Enter the OTP you received Phone <span id="phone">7041867446</span></p>
+                                      <div class="otp-input">
+                                          <input type="number" min="0" max="9" required>
+                                          <input type="number" min="0" max="9" required>
+                                          <input type="number" min="0" max="9" required>
+                                          <input type="number" min="0" max="9" required>
+                                      </div>
+                                        <button onclick="verifyOTP()" class="btn-log">Verify</button>
+                                        <div class="resend-text">
+                                            Didn't receive the code?
+                                            <span class="resend-link" onclick="resendOTP()">Resend Code</span>
+                                            <span id="timer"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary btn-secondry border-0"
+                                        data-bs-target="#exampleModalToggle11" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Done</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <!-- Model 5 End -->
+
+                        <!-- Model End -->
+                        <div class="card mt-2"
+                            style="box-shadow: 0 0 30px rgba(0, 0, 0, .2); border: 1px solid #fff; border-radius: 20px;">
                             <div id="item-2">
                                 <div class="container mt-3 p-2">
                                     <div class="card" style="border: none;">
-    
+
                                         <div class="row py-2 px-3">
                                             <div class="card-title m-0 px-3 d-flex">
                                                 <div class="col-lg-6">
                                                     <h2>Login Details</h2>
                                                     <p>Manage your mobile number, email address and password</p>
                                                 </div>
-                                                <div class="col-lg-6 text-end">
-                                                    <button type="button" class="btn btn-primary btn-secondry"
-                                                        style="border: none;"><i class="fas fa-pencil-alt"></i><span
-                                                            class="mx-2">Edit</span></button>
-                                                </div>
+
                                             </div>
                                             <div class="personal-info ">
                                                 <div class="mb-2 row px-2">
                                                     <label for="staticUsername"
                                                         class="col-sm-2 col-form-label User-Name">Mobile No:</label>
                                                     <div class="col-sm-10">
-                                                        <input type="text" readonly class="form-control-plaintext"
-                                                            id="staticUsername" value="7041867446">
+                                                        <div class="row">
+                                                            <div class="col-lg-10 d-flex align-items-center">
+                                                                <input type="text" readonly
+                                                                    class="form-control-plaintext" id="staticUsername"
+                                                                    value="7041867446">
+                                                                <img src="img/verify.png" alt="" width="20" height="20"
+                                                                    style="align-items: center;">
+                                                            </div>
+                                                            <div class="col-lg-2 text-end">
+                                                                <a type="button" class="btn btn-primary btn-secondry"
+                                                                    data-bs-target="#exampleModalToggle7"
+                                                                    data-bs-toggle="modal" style="border: none;"><i
+                                                                        class="fas fa-pencil-alt"></i><span
+                                                                        class="mx-2">Edit</span></a>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="mb-2 row px-2">
                                                     <label for="staticUsername"
                                                         class="col-sm-2 col-form-label User-Name">Email Id:</label>
                                                     <div class="col-sm-10">
-                                                        <input type="text" readonly class="form-control-plaintext"
-                                                            id="staticUsername" value="example@gmail.com">
+                                                        <div class="row">
+                                                            <div class="col-lg-10 d-flex align-items-center">
+                                                                <input type="text" readonly
+                                                                    class="form-control-plaintext" id="staticUsername"
+                                                                    value="example@gmail.com">
+                                                                <img src="img/verify.png" alt="" width="20" height="20"
+                                                                    style="align-items: center;">
+                                                            </div>
+                                                            <div class="col-lg-2 text-end">
+                                                                <a type="button" class="btn btn-primary btn-secondry"
+                                                                    data-bs-target="#exampleModalToggle9"
+                                                                    data-bs-toggle="modal" style="border: none;"><i
+                                                                        class="fas fa-pencil-alt"></i><span
+                                                                        class="mx-2">Edit</span></a>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="mb-2 row px-2">
                                                     <label for="staticUsername"
                                                         class="col-sm-2 col-form-label User-Name">Password:</label>
                                                     <div class="col-sm-10">
-                                                        <input type="text" readonly class="form-control-plaintext"
-                                                            id="staticUsername" value="********">
+
+                                                        <div class="row">
+                                                            <div class="col-lg-10 d-flex align-items-center">
+                                                                <input type="text" readonly
+                                                                    class="form-control-plaintext" id="staticUsername"
+                                                                    value="********">
+                                                                <img src="img/verify.png" alt="" width="20" height="20"
+                                                                    style="align-items: center;">
+                                                            </div>
+                                                            <div class="col-lg-2 text-end">
+                                                                <a type="button" class="btn btn-primary btn-secondry"
+                                                                    data-bs-target="#exampleModalToggle11"
+                                                                    data-bs-toggle="modal" style="border: none;"><i
+                                                                        class="fas fa-pencil-alt"></i><span
+                                                                        class="mx-2">Edit</span></a>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-    
+
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card mt-2" style="box-shadow: 0 0 30px rgba(0, 0, 0, .2); border: 1px solid #fff; border-radius: 20px;">
+                        <div class="card mt-2"
+                            style="box-shadow: 0 0 30px rgba(0, 0, 0, .2); border: 1px solid #fff; border-radius: 20px;">
                             <div id="item-3">
                                 <div class="container mt-3 p-2">
                                     <div class="card" style="border: none;">
-    
+
                                         <div class="row py-2 px-3">
                                             <div class="card-title m-0 px-3 d-flex">
                                                 <div class="col-lg-6">
                                                     <h2>Logout</h2>
                                                     <p>Check all the devices where your account is logged in</p>
                                                 </div>
-    
+
                                             </div>
                                             <div class="personal-info ">
                                                 <button class="btn btn-primary btn-secondry border-0"><i
                                                         class="fas fa-power-off"></i><span class="mx-2">
                                                         Logout</span></button>
-    
+
                                             </div>
                                         </div>
-    
+
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
-                    </div>
+
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
