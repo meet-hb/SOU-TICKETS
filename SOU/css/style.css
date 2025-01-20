@@ -502,6 +502,30 @@
     .carousel-header .carousel .carousel-indicators {
         padding: 0;
     }
+    .sub-title::before {
+        display: none;
+        width: 100px;
+        position: absolute;
+        bottom: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        margin-bottom: -8px;
+        margin-right: -100px;
+        border: 1px solid var(--bs-secondary) !important;
+    }
+    
+    .sub-title::after {
+        display: none;
+        width: 50px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        margin-top: -6px;
+        margin-right: -50px;
+        border: 1px solid var(--bs-primary) !important;
+    }
+    
 }
 
 /*** Carousel Hero Header End ***/
