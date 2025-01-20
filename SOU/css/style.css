@@ -261,6 +261,18 @@
     transition: .5s;
     opacity: 1;
 }
+.navbar .nav-item .dropdown-menu {
+    display: block;
+    visibility: hidden;
+    top: 100%;
+    transform: rotateX(-75deg);
+    transform-origin: 0% 0%;
+    border: 0;
+    border-radius: 10px;
+    transition: .5s;
+    opacity: 0;
+
+}
 
 @media (max-width: 991.98px) {
     .sticky-top {
