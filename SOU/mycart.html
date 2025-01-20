@@ -315,78 +315,118 @@
                 <div id="tsum-tabs">
                     <h1>My Cart</h1>
                     <main>
-                        <div class="container p-0">
-                            <div class="booking-bag p-0">
-                                <div class="card p-2"
-                                    style="box-shadow: 0 0 30px rgba(0, 0, 0, .2); border: 1px solid #fff; border-radius: 20px;">
-                                    <div class="row ">
-                                        <div class="col-lg-3">
-                                            <div class="othertripdatedetails">
-                                                <span class="ottripdate">18</span>
-                                                <span class="ottripyear">November 2024</span>
-                                                <span class="ottripday">Monday</span>
+                        <input id="tab1" type="radio" name="tabs" checked>
+                        <label for="tab1"><i class="fas fa-suitcase-rolling"></i><span
+                                class="mx-2">General Booking</span></label>
+                        <input id="tab2" type="radio" name="tabs">
+                        <label for="tab2"><i class="fas fa-ticket-alt"></i><span class="mx-2">Group Booking</span></label>
+                        
+                        <section id="content1">
+                            <div class="container p-0">
+                                <div class="booking-bag p-0">
+                                    <div class="card p-2"
+                                        style="box-shadow: 0 0 30px rgba(0, 0, 0, .2); border: 1px solid #fff; border-radius: 20px;">
+                                        <div class="row ">
+                                            <div class="col-lg-3">
+                                                <!-- <img src="img/travel.gif" alt="" class="img-fluid" srcset=""> -->
+                                                <div class="othertripdatedetails">
+                                                    <span class="ottripdate">18</span>
+                                                    <span class="ottripyear">November 2024</span>
+                                                    <span class="ottripday">Monday</span>
 
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-6 justify-content-center align-items-center">
-                                            <div class="tripdet1">
-                                                <span class="CityDet">Total Tickets</span>
-                                                <span class="boardingtxt p-0" style="color: #f4984a;">5</span>
-
+                                            <div class="col-lg-6">
+                                                <!-- <h5>Looks empty, you've no upcoming bookings.</h5>
+                                                <p>When you book a trip, you will see your itinerary here.</p> -->
+                                                <div class="tripdet1">
+                                                    <span class="CityDet">Total Tickets</span>
+                                                    <span class="boardingtxt p-0" style="color: #f4984a;">5</span>
+                                                    
+                                                </div>
+                                                <div class="tripdet1">
+                                                </div>
                                             </div>
-                                            <div class="tripdet1">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 px-0">
-                                            <div class="tripdet2 p-0 text-end">
-                                                <span class="boardingtxt">
-                                                    <h5>Total Amout</h5>
-                                                </span>
-                                                <span class="boardingtxt p-0">
-                                                    <h5 style="color: #f4984a;">₹10551 /-</h5>
-                                                </span>
+                                            <!-- <div class="col-lg-3 px-0 ">
+                                                <div class="tripdet2 text-center">
+                                                    <span class="boardingtxt">Payment Method</span>
+                                                    <span class="boardingtxt p-0" style="color: #f4984a;">Google
+                                                        Pay</span>
+                                                    <span class="boardingtxt">Booking Id</span>
+                                                    <span class="boardingtxt p-0" style="color: #f4984a;">0008546</span>
+                                                </div>
+                                            </div> -->
+                                            <div class="col-lg-3 px-0">
+                                                <div class="tripdet2 p-0 text-end">
+                                                    <span class="boardingtxt">
+                                                        <h5>Total Amout</h5>
+                                                    </span>
+                                                    <span class="boardingtxt p-0">
+                                                        <h5 style="color: #f4984a;">₹10551 /-</h5>
+                                                    </span>
+                                                    <a href="#"
+                                                        class="btn btn-primary border-secondary rounded-pill p-1 m-0 btn-text mt-lg-2 mx-lg-4"
+                                                        data-bs-target="#exampleModalToggleTickets"
+                                                        data-bs-toggle="modal">Book Tickets</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="container p-0 mt-4">
-                            <div class="booking-bag p-0">
-                                <div class="card p-2"
-                                    style="box-shadow: 0 0 30px rgba(0, 0, 0, .2); border: 1px solid #fff; border-radius: 20px;">
-                                    <div class="row ">
-                                        <div class="col-lg-3">
-                                            <div class="othertripdatedetails">
-                                                <span class="ottripdate">18</span>
-                                                <span class="ottripyear">November 2024</span>
-                                                <span class="ottripday">Monday</span>
+                        </section>
+                        <section id="content2">
+                            <div class="container p-0">
+                                <div class="booking-bag p-0">
+                                    <div class="card p-2"
+                                        style="box-shadow: 0 0 30px rgba(0, 0, 0, .2); border: 1px solid #fff; border-radius: 20px;">
+                                        <div class="row ">
+                                            <div class="col-lg-3">
+                                                <!-- <img src="img/travel.gif" alt="" class="img-fluid" srcset=""> -->
+                                                <div class="othertripdatedetails">
+                                                    <span class="ottripdate">18</span>
+                                                    <span class="ottripyear">November 2024</span>
+                                                    <span class="ottripday">Monday</span>
 
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="tripdet1">
-                                                <span class="CityDet">Total Tickets</span>
-                                                <span class="boardingtxt p-0" style="color: #f4984a;">5</span>
-
+                                            <div class="col-lg-3">
+                                                <!-- <h5>Looks empty, you've no upcoming bookings.</h5>
+                                                <p>When you book a trip, you will see your itinerary here.</p> -->
+                                                <div class="tripdet1">
+                                                    <span class="CityDet">Total Tickets</span>
+                                                    <span class="boardingtxt p-0" style="color: #f4984a;">5</span>
+                                                    
+                                                </div>
+                                                <div class="tripdet1">
+                                                </div>
                                             </div>
-                                            <div class="tripdet1">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 px-0">
-                                            <div class="tripdet2 p-0 text-end">
-                                                <span class="boardingtxt">
-                                                    <h5>Total Amout</h5>
-                                                </span>
-                                                <span class="boardingtxt p-0">
-                                                    <h5 style="color: #f4984a;">₹10551 /-</h5>
-                                                </span>
+                                            <!-- <div class="col-lg-3 px-0 ">
+                                                <div class="tripdet2 text-center">
+                                                    <span class="boardingtxt">Payment Method</span>
+                                                    <span class="boardingtxt p-0" style="color: #f4984a;">Google
+                                                        Pay</span>
+                                                    <span class="boardingtxt">Booking Id</span>
+                                                    <span class="boardingtxt p-0" style="color: #f4984a;">0008546</span>
+                                                </div>
+                                            </div> -->
+                                            <div class="col-lg-3 px-0">
+                                                <div class="tripdet2 p-0 text-end">
+                                                    <span class="boardingtxt">
+                                                        <h5>Total Amout</h5>
+                                                    </span>
+                                                    <span class="boardingtxt p-0">
+                                                        <h5 style="color: #f4984a;">₹10551 /-</h5>
+                                                    </span>
+                                                    <a href="#"
+                                                        class="btn btn-primary border-secondary rounded-pill p-1 m-0 btn-text mt-lg-2 mx-lg-4">Book Tickets</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </section>
                     </main>
                 </div>
             </div>
