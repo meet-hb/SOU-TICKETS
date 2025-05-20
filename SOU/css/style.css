@@ -189,6 +189,9 @@
     .topbar {
         display: none;
     }
+    .redio-title{
+        font-size: 15px !important;
+    }
 }
 
 /*** Topbar End ***/
@@ -1208,6 +1211,9 @@ form {
     .login-box {
         height: calc(100vh - 40px);
     }
+    .redio-title{
+        font-size: 15px !important;
+    }
 
     .form-box {
         bottom: 0;
@@ -1260,6 +1266,9 @@ form {
 @media screen and (max-width: 400px) {
     .form-box {
         padding: 20px;
+    }
+    .redio-title{
+        font-size: 15px !important;
     }
 
     .toggle-panel h1 {
